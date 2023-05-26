@@ -7,8 +7,6 @@ import './App.css';
 import Home from './pages/Home/Home';
 import Project from './pages/Project/Project';
 import ErrorPage from './pages/Error/Error';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
 
 const router = createBrowserRouter(
   [
@@ -27,10 +25,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <React.StrictMode>
-      <div id='main-page-render'>
         <RouterProvider router={router} />
-      </div>
-      <Footer />
     </React.StrictMode>
   );
 }
