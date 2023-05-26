@@ -1,9 +1,7 @@
 import './Project.module.css';
 
 function Project() {
-    return{
-
-    };
+    return
 }
 
 export default Project;

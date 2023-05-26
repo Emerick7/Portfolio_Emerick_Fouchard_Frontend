@@ -1,9 +1,7 @@
 import './Error.module.css';
 
 function ErrorPage() {
-    return{
-
-    };
+    return
 }
 
 export default ErrorPage;
