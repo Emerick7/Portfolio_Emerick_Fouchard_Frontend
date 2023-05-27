@@ -1,0 +1,18 @@
+.SocialButtonsAside {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    margin: 0;
+}
+
+.SocialButtonsAside div {
+    
+}
+
+.SocialButtonsAside img{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+
+    filter: invert(34%) sepia(1%) saturate(1167%) hue-rotate(182deg) brightness(95%) contrast(87%);
+}

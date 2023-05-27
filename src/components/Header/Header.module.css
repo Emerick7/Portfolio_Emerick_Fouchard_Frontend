@@ -36,7 +36,7 @@
 .ContactEmail {
     display: flex;
     flex-direction: row;
-    margin-left: 25%;
+    margin-left: 100px;
     text-decoration: none;
 }
 
@@ -49,7 +49,6 @@
 .DBModeImg {
     height: 20px;
     width: 20px;
-    margin-left: 10%;
     cursor: pointer;
     filter: invert(34%) sepia(1%) saturate(1167%) hue-rotate(182deg) brightness(95%) contrast(87%);
 }
@@ -57,6 +56,7 @@
 .Nav ul{
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 .Nav li {
@@ -67,6 +67,7 @@
 }
 
 .Nav a {
+    display: flex;
     text-decoration: none;
 }
 

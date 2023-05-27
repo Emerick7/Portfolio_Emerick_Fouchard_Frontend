@@ -21,8 +21,8 @@ function Header() {
                     <img src={mailLogo} alt='email_logo_emerick_fouchard'/>
                     fouchardemerick@gmail.com
                 </Link>
-                <img src={sunLogo} className={styles.DBModeImg} onClick={darkBrightMode} alt='dark-bright-mode-emerick-fouchard'/>
             </div>
+            <img src={sunLogo} className={styles.DBModeImg} onClick={darkBrightMode} alt='dark-bright-mode-emerick-fouchard'/>
             <nav className={styles.Nav}>
                 <ul>
                     <li>
