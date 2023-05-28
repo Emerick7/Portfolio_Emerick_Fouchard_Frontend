@@ -1,1 +1,15 @@
+* {
+    /*cursor: none;*/
+}
 
+.cursor {
+    background-color: #FFF;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}

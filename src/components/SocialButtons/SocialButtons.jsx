@@ -1,34 +1,39 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { useHover } from '@react-hooks-library/core';
 import styles from './SocialButtons.module.css';
-import Pulse from 'react-reveal/Pulse';
 import linkedinLogo from '../../assets/linkedin-logo.svg';
 import githubLogo from '../../assets/github-logo.svg';
 import twitterLogo from '../../assets/twitter-logo.svg';
 import { SOCIAL_PATHS } from '../../utils/paths';
 
-function SocialButtons() {
-    const refImgLinkedin = React.useRef()
-    const isHoveredLinkedin = useHover(refImgLinkedin);
-
-    const refImgGithub = React.useRef()
-    const isHoveredGithub = useHover(refImgGithub);
-
-    const refImgTwitter = React.useRef()
-    const isHoveredTwitter = useHover(refImgTwitter);
+function SocialButtons({ cursorVariant, setCursorVariant }) {
+    const hoverEnter = () => setCursorVariant("hover");
+    const hoverLeave = () => setCursorVariant("default");
 
     return (
         <aside className={styles.SocialButtonsAside}>
-            <Pulse spy={isHoveredLinkedin}>
-                <Link to={SOCIAL_PATHS.LINKEDIN}><img src={linkedinLogo} ref={refImgLinkedin}/></Link>
-            </Pulse>
-            <Pulse spy={isHoveredGithub}>
-                <Link to={SOCIAL_PATHS.GITHUB}><img src={githubLogo} ref={refImgGithub}/></Link>
-            </Pulse>
-            <Pulse spy={isHoveredTwitter}>
-                <Link to={SOCIAL_PATHS.TWITTER}><img src={twitterLogo} ref={refImgTwitter}/></Link>
-            </Pulse>
+            <Link to={SOCIAL_PATHS.LINKEDIN} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                <motion.img
+                    src={linkedinLogo}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                />
+            </Link>
+            <Link to={SOCIAL_PATHS.GITHUB} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                <motion.img
+                    src={githubLogo}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                />
+            </Link>
+            <Link to={SOCIAL_PATHS.TWITTER} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                <motion.img
+                    src={twitterLogo}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                />
+            </Link>
         </aside>
     );
 }

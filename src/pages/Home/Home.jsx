@@ -3,13 +3,15 @@ import styles from './Home.module.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import SocialButtons from '../../components/SocialButtons/SocialButtons';
+import IntroHomePage from '../../components/IntroHomePage/IntroHomePage';
 
-function Home() {
+function Home({ cursorVariant, setCursorVariant }) {
     return (
         <React.StrictMode>
             <div className={styles.PageContainer}>
-                <Header />
-                <SocialButtons />
+                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+                <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+                <IntroHomePage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                 <main>
                     <section>
 
@@ -24,7 +26,7 @@ function Home() {
                     </aside>
                 </main>
             </div>
-            <Footer />
+            <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
         </React.StrictMode>
     );
 }
