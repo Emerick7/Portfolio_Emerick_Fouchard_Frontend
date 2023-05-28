@@ -21,13 +21,8 @@ function App() {
 
   useEffect(() => {
     const moveCursor = (e) => {
-      if(cursorVariant === "default"){
-        cursorX.set(e.clientX - 12);
-        cursorY.set(e.clientY - 12);
-      } else if(cursorVariant === "hover") {
-        cursorX.set(e.clientX - 24);
-        cursorY.set(e.clientY - 24);
-      }
+      cursorX.set(e.clientX - 12);
+      cursorY.set(e.clientY - 12);
     };
 
     window.addEventListener("mousemove", moveCursor);
