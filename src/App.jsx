@@ -20,9 +20,14 @@ function App() {
   const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
+    let gap = 12;
+    if(cursorVariant === 'hover') {
+      gap = 24;
+    }
+
     const moveCursor = (e) => {
-      cursorX.set(e.clientX - 12);
-      cursorY.set(e.clientY - 12);
+      cursorX.set(e.clientX - gap);
+      cursorY.set(e.clientY - gap);
     };
 
     window.addEventListener("mousemove", moveCursor);
@@ -30,7 +35,7 @@ function App() {
     return () => {
       window.removeEventListener("mousemove", moveCursor);
     };
-  }, []);
+  }, [cursorVariant]);
 
   const variants = {
     default: {
