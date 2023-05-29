@@ -2,11 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 30px;
-    margin: 0;
-}
-
-.SocialButtonsAside div {
-    
+    margin: 0 96px 0 0;
 }
 
 .SocialButtonsAside img{

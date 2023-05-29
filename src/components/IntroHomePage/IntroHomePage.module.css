@@ -1,10 +1,30 @@
+.IntroDiv {
+    height: auto;
+    width: 50%;
+}
+
+.ImgDiv{
+    height: auto;
+    width: 50%;
+}
+
+.IntroDiv p {
+    height: auto;
+    width: 300px;
+}
+
 .H1MyName {
     font-family: 'Exo 2', sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 25px;
     text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.H1MyName span {
+    display: inline-block;
 }
 
 .PhotoBackground {

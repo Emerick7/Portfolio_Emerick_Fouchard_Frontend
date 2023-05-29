@@ -11,8 +11,8 @@ function Home({ cursorVariant, setCursorVariant }) {
             <div className={styles.PageContainer}>
                 <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                 <main>
-                    <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
-                    <section>
+                    <section className={styles.TopSection}>
+                        <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                         <IntroHomePage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     </section>
                     <article>
