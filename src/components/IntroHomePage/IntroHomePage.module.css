@@ -1,4 +1,18 @@
-.PhotoCartoon {
+.H1MyName {
+    font-family: 'Exo 2', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.PhotoBackground {
     height: auto;
     width: 320px;
+}
+
+.Char {
+    transform: translateY(115px);
+    transition: transform .5s;
 }

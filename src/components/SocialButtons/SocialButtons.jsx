@@ -13,21 +13,21 @@ function SocialButtons({ cursorVariant, setCursorVariant }) {
 
     return (
         <aside className={styles.SocialButtonsAside}>
-            <Link to={SOCIAL_PATHS.LINKEDIN} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+            <Link to={SOCIAL_PATHS.LINKEDIN} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                 <motion.img
                     src={linkedinLogo}
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 />
             </Link>
-            <Link to={SOCIAL_PATHS.GITHUB} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+            <Link to={SOCIAL_PATHS.GITHUB} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                 <motion.img
                     src={githubLogo}
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 />
             </Link>
-            <Link to={SOCIAL_PATHS.TWITTER} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+            <Link to={SOCIAL_PATHS.TWITTER} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                 <motion.img
                     src={twitterLogo}
                     whileHover={{ scale: 1.1 }}

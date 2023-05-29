@@ -10,11 +10,10 @@ function Home({ cursorVariant, setCursorVariant }) {
         <React.StrictMode>
             <div className={styles.PageContainer}>
                 <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
-                <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
-                <IntroHomePage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                 <main>
+                    <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     <section>
-
+                        <IntroHomePage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     </section>
                     <article>
                         <section>
