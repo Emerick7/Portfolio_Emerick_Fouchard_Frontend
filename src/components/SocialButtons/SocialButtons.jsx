@@ -11,27 +11,34 @@ function SocialButtons({ cursorVariant, setCursorVariant }) {
     const hoverEnter = () => setCursorVariant("hover");
     const hoverLeave = () => setCursorVariant("default");
 
+    const onHover = { scale: 1.2 }
+    const transitionOnHover = {
+        type: "spring",
+        stiffness: 400,
+        damping: 10
+    }
+
     return (
         <aside className={styles.SocialButtonsAside}>
             <Link to={SOCIAL_PATHS.LINKEDIN} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                 <motion.img
                     src={linkedinLogo}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    whileHover={onHover}
+                    transition={transitionOnHover}
                 />
             </Link>
             <Link to={SOCIAL_PATHS.GITHUB} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                 <motion.img
                     src={githubLogo}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    whileHover={onHover}
+                    transition={transitionOnHover}
                 />
             </Link>
             <Link to={SOCIAL_PATHS.TWITTER} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                 <motion.img
                     src={twitterLogo}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    whileHover={onHover}
+                    transition={transitionOnHover}
                 />
             </Link>
         </aside>
