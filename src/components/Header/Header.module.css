@@ -42,10 +42,14 @@
     transform: rotate(180deg);*/
 }
 
+.MailDiv {
+    margin-left: 100px;
+    padding: 5px;
+}
+
 .ContactEmail {
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
     text-decoration: none;
 }
 
@@ -53,6 +57,7 @@
     height: 20px;
     width: 20px;
     filter: invert(94%) sepia(18%) saturate(99%) hue-rotate(61deg) brightness(88%) contrast(90%);
+    margin-right: 5px;
 }
 
 .DBModeImg {
@@ -71,6 +76,7 @@
     display: flex;
     align-items: center;
     margin-left: 15px;
+    padding: 5px;
     list-style-type: none;
 }
 
@@ -83,4 +89,5 @@
     height: 20px;
     width: 20px;
     filter: invert(94%) sepia(18%) saturate(99%) hue-rotate(61deg) brightness(88%) contrast(90%);
+    margin-right: 5px;
 }
