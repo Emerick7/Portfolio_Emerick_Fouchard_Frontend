@@ -27,12 +27,32 @@
     display: inline-block;
 }
 
+.ButtonContact {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #f99191;
+    border-radius: 50%;
+    background-color: #FD7272;
+    margin: 30px 0 0 100px;
+
+    font-family: 'Nunito', sans-serif;
+    color: #FFF;
+}
+
+.ButtonContact span {
+    font-weight: 800;
+    line-height: 10px;
+}
+
+.ButtonContact span:first-of-type {
+    font-size: 15px;
+}
+
+.ButtonContact span:last-of-type {
+    font-size: 12px;
+}
+
 .PhotoBackground {
     height: auto;
     width: 320px;
-}
-
-.Char {
-    transform: translateY(115px);
-    transition: transform .5s;
 }
