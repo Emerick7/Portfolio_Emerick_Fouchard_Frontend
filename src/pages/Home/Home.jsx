@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import SocialButtons from '../../components/SocialButtons/SocialButtons';
 import IntroHomePage from '../../components/IntroHomePage/IntroHomePage';
+import ServicesSection from '../../components/Services/ServicesSection/ServicesSection';
 
 function Home({ cursorVariant, setCursorVariant }) {
     return (
@@ -15,14 +16,7 @@ function Home({ cursorVariant, setCursorVariant }) {
                         <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                         <IntroHomePage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     </section>
-                    <article>
-                        <section>
-
-                        </section>
-                    </article>
-                    <aside>
-
-                    </aside>
+                    <ServicesSection />
                 </main>
             </div>
             <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
