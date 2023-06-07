@@ -1,6 +1,46 @@
+.ServiceContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ServiceDiv {
-    width: 100%;
-    height: 30%;
-    border: 2px dotted red;
     position: relative;
+    width: 80%;
+    height: 50%;
+    border: 2px dotted red;
+}
+
+.ServiceDiv img {
+    height: 300px;
+    width: auto;
+}
+
+.Progress {
+    position: sticky;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.Progress svg {
+    transform: translateX(-100px) rotate(-90deg);
+}
+
+.Progress svg circle {
+    stroke-dashoffset: 0;
+    stroke-width: 5%;
+    fill: none;
+}
+
+.Bg {
+    stroke: red;
+    opacity: 0.2;
+}
+
+.Indicator {
+    stroke: red;
 }

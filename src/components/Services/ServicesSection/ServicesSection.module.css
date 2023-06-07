@@ -1,12 +1,3 @@
 .ServicesSection {
-    height: 300vh;
-}
-
-.Progress {
-    position: fixed;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: white;
-    bottom: 100px;
+    
 }
