@@ -1,0 +1,13 @@
+.ImgDescDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 80px;
+}
+
+.Description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 80px;
+}

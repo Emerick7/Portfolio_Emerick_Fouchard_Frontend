@@ -11,6 +11,7 @@
 .IntroDiv p {
     height: auto;
     width: 300px;
+    margin: 50px 0;
 }
 
 .H1MyName {
@@ -33,7 +34,7 @@
     border: 15px solid #f99191;
     border-radius: 50%;
     background-color: #FD7272;
-    margin: 30px 0 0 100px;
+    margin: 0 0 0 100px;
 
     font-family: 'Nunito', sans-serif;
     color: #FFF;

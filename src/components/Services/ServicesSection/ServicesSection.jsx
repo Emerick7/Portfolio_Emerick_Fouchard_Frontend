@@ -14,8 +14,8 @@ function ServicesSection() {
             <h3>Ce que je peux faire</h3>
             <hr/>
             <section className={styles.ServicesSection}>
-                {ServicesArray.map((service) => (
-                    <ServiceOnScroll id={service.id} alt={service.alt} src={service.src} />
+                {ServicesArray.map((service, index) => (
+                    <ServiceOnScroll key={service.id} title={service.title} alt={service.alt} src={service.src} desc={service.desc} />
                 ))}
             </section>
         </article>

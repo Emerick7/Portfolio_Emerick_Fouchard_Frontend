@@ -5,8 +5,10 @@ import {
     useScroll,
   } from "framer-motion";
 import styles from './ServiceOnScroll.module.css';
+import '../Services.css';
+import ServiceContent from './ServiceContent/ServiceContent';
 
-function ServiceOnScroll({ id, alt, src }) {
+function ServiceOnScroll({ title, alt, src, desc }) {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -14,7 +16,7 @@ function ServiceOnScroll({ id, alt, src }) {
     });
 
     return (
-        <section className={styles.ServiceContainer}>
+        <section className="service-container">
             <div ref={ref} className={styles.ServiceDiv}>
                 <figure className={styles.Progress}>
                     <svg id="progress" width="75" height="75" viewBox="0 0 100 100">
@@ -29,8 +31,7 @@ function ServiceOnScroll({ id, alt, src }) {
                         />
                     </svg>
                 </figure>
-                <img src={src} alt={alt} />
-                <motion.h2>{`#00${id}`}</motion.h2>
+                <ServiceContent title={title} alt={alt} src={src} desc={desc} />
             </div>
         </section>
     );

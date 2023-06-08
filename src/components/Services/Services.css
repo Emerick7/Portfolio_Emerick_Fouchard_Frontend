@@ -1,0 +1,14 @@
+.service-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-container:nth-child(2n) .img-desc-div {
+    flex-direction: row-reverse;
+}
+
+.service-container:nth-child(2n) .service-description {
+    margin: 0 80px 0 0;
+}
