@@ -5,7 +5,6 @@ import {
     motion,
     useScroll,
     useTransform,
-    useSpring
   } from "framer-motion";
 
 function ServiceContent({ title, alt, src, desc }) {
