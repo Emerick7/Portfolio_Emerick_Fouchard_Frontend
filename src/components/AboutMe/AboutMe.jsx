@@ -24,7 +24,18 @@ function AboutMe() {
                     times: [0, 0.2, 0.4, 0.6, 0.8, 1]
                 }}
             >
-                <img src={aboutMePhoto} alt="emerick-fouchard-about-me-developper-full-stack"/>
+                <motion.img
+                    src={aboutMePhoto}
+                    alt="emerick-fouchard-about-me-developper-full-stack"
+                    initial={{ scale: 1 }}
+                    whileInView={{ scale: [1, 0.5, 0.5, 0.5, 1, 1] }}
+                    transition={{
+                        duration: 2,
+                        delay: 1,
+                        ease: "easeInOut",
+                        times: [0, 0.2, 0.4, 0.6, 0.8, 1]
+                    }}
+                    />
                 <div className={styles.AboutMeDesc}>
                     <h2>Mieux me connaître</h2>
                     <h3>Fun fact : Fan et joueur invétéré de Rocket League depuis 2016</h3>
