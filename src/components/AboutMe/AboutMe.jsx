@@ -1,5 +1,5 @@
 import styles from './AboutMe.module.css';
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import aboutMePhoto from '../../assets/about-me-photo.svg';
 
 function AboutMe() {
