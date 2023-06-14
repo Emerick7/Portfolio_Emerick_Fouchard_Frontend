@@ -5,9 +5,16 @@ import {
 } from "react-router-dom";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import './App.css';
+import { APP_PATHS } from './utils/constants';
 import Home from './pages/Home/Home';
-import Project from './pages/Project/Project';
 import ErrorPage from './pages/Error/Error';
+import Work from './pages/Work/Work';
+import Works from './pages/Works/Works';
+import SignIn from './pages/SignIn/SignIn';
+import AddWork from './pages/AddWork/AddWork';
+import Resume from './pages/Resume/Resume';
+import Services from './pages/Services/Services';
+import UpdateWork from './pages/UpdateWork/UpdateWork';
 
 function App() {
   const cursorX = useMotionValue(-100);
@@ -51,13 +58,37 @@ function App() {
   const router = createBrowserRouter(
     [
       {
-        path: '/',
+        path: APP_PATHS.HOME,
         element: <Home cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />,
         errorElement: <ErrorPage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
       },
       {
-        path: 'projects/:projectId',
-        element: <Project cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+        path: APP_PATHS.WORK,
+        element: <Work cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+      },
+      {
+        path: APP_PATHS.WORKS,
+        element: <Works cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+      },
+      {
+        path: APP_PATHS.RESUME,
+        element: <Resume cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+      },
+      {
+        path: APP_PATHS.SERVICES,
+        element: <Services cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+      },
+      {
+        path: APP_PATHS.SIGN_IN,
+        element: <SignIn cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+      },
+      {
+        path: APP_PATHS.ADD_WORK,
+        element: <AddWork cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+      },
+      {
+        path: APP_PATHS.UPDATE_WORK,
+        element: <UpdateWork cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
       }
     ]
   );

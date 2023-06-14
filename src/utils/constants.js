@@ -1,10 +1,20 @@
+const API_URL = 'http://localhost:4000';
+export const API_ROUTES = {
+  SIGN_UP: `${API_URL}/api/auth/signup`,
+  SIGN_IN: `${API_URL}/api/auth/login`,
+  WORKS: `${API_URL}/api/works`,
+};
+
 export const APP_PATHS = {
     HOME: '/',
-    PORTFOLIO: '/portfolio',
+    WORKS: '/portfolio',
     RESUME: '/resume',
     SERVICES: '/services',
-    PROJECT: '/projects/:projectId',
-    ERROR_PAGE: '/error'
+    WORK: '/works/:workId',
+    ERROR_PAGE: '/error',
+    SIGN_IN: '/connexion-secrète-pour-emerick-fouchard',
+    ADD_WORK: '/page-secrète-d-ajout-de-projets',
+    UPDATE_WORK: '/page-secrète-de-modification-de-projets'
 };
 
 export const HOME_PATHS = {

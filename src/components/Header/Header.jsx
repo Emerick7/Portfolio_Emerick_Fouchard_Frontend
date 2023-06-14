@@ -7,7 +7,7 @@ import resumeLogo from '../../assets/resume-logo.svg';
 import servicesLogo from '../../assets/services-pc-logo.svg';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { APP_PATHS, CONTACT_PATHS } from '../../utils/paths';
+import { APP_PATHS, CONTACT_PATHS } from '../../utils/constants';
 
 function Header({ cursorVariant, setCursorVariant }) {
     const hoverEnter = () => setCursorVariant("hover");

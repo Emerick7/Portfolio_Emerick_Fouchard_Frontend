@@ -5,7 +5,7 @@ import styles from './SocialButtons.module.css';
 import linkedinLogo from '../../assets/linkedin-logo.svg';
 import githubLogo from '../../assets/github-logo.svg';
 import twitterLogo from '../../assets/twitter-logo.svg';
-import { SOCIAL_PATHS } from '../../utils/paths';
+import { SOCIAL_PATHS } from '../../utils/constants';
 
 function SocialButtons({ cursorVariant, setCursorVariant }) {
     const hoverEnter = () => setCursorVariant("hover");

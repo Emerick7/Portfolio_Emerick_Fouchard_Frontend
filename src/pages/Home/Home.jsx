@@ -6,7 +6,7 @@ import SocialButtons from '../../components/SocialButtons/SocialButtons';
 import IntroHomePage from '../../components/IntroHomePage/IntroHomePage';
 import ServicesSection from '../../components/Services/ServicesSection/ServicesSection';
 import AboutMe from '../../components/AboutMe/AboutMe';
-import Works from '../../components/Works/Works';
+import WorksScroll from '../../components/Works/WorksScroll';
 
 function Home({ cursorVariant, setCursorVariant }) {
     return (
@@ -20,7 +20,7 @@ function Home({ cursorVariant, setCursorVariant }) {
                     </section>
                     <ServicesSection />
                     <AboutMe />
-                    <Works />
+                    <WorksScroll />
                 </main>
             </div>
             <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
