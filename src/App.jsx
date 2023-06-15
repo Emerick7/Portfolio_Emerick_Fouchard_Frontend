@@ -6,6 +6,7 @@ import {
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import './App.css';
 import { APP_PATHS } from './utils/constants';
+import { useUser } from './lib/customHooks';
 import Home from './pages/Home/Home';
 import ErrorPage from './pages/Error/Error';
 import Work from './pages/Work/Work';
@@ -15,8 +16,16 @@ import AddWork from './pages/AddWork/AddWork';
 import Resume from './pages/Resume/Resume';
 import Services from './pages/Services/Services';
 import UpdateWork from './pages/UpdateWork/UpdateWork';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
+  const [user, setUser] = useState(null);
+  const { connectedUser } = useUser();
+
+  useEffect(() => {
+    setUser(connectedUser);
+  }, [connectedUser]);
+
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
@@ -80,7 +89,11 @@ function App() {
       },
       {
         path: APP_PATHS.SIGN_IN,
-        element: <SignIn cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+        element: <SignIn
+                    cursorVariant={cursorVariant} 
+                    setCursorVariant={setCursorVariant} 
+                    setUser={setUser}
+                    />
       },
       {
         path: APP_PATHS.ADD_WORK,
@@ -89,6 +102,10 @@ function App() {
       {
         path: APP_PATHS.UPDATE_WORK,
         element: <UpdateWork cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+      },
+      {
+        path: APP_PATHS.DASHBOARD,
+        element: <Dashboard cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
       }
     ]
   );

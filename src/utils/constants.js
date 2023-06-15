@@ -14,7 +14,8 @@ export const APP_PATHS = {
     ERROR_PAGE: '/error',
     SIGN_IN: '/connexion-secrète-pour-emerick-fouchard',
     ADD_WORK: '/page-secrète-d-ajout-de-projets',
-    UPDATE_WORK: '/page-secrète-de-modification-de-projets'
+    UPDATE_WORK: '/page-secrète-de-modification-de-projets',
+    DASHBOARD: '/dashboard-secret-modification'
 };
 
 export const HOME_PATHS = {

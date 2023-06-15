@@ -11,7 +11,7 @@ function SignIn({ setUser }) {
   const navigate = useNavigate();
   const { user, authenticated } = useUser();
   if (user || authenticated) {
-    navigate(APP_PATHS.ADD_WORK);
+    navigate(APP_PATHS.DASHBOARD);
   }
 
   const [email, setEmail] = useState('');
@@ -35,7 +35,7 @@ function SignIn({ setUser }) {
       } else {
         storeInLocalStorage(response.data.token, response.data.userId);
         setUser(response.data);
-        navigate('/');
+        navigate(APP_PATHS.DASHBOARD);
       }
     } catch (err) {
       console.log(err);

@@ -68,20 +68,20 @@ function WorkForm({ work, validate }) {
     <form onSubmit={handleSubmit(onSubmit)} className={styles.Form}>
       <input type="hidden" id="id" {...register('id')} />
       <label htmlFor="title">
-        <p>Titre du livre</p>
+        <p>Titre du projet</p>
         <input type="text" id="title" {...register('title')} />
       </label>
-      <label htmlFor="author">
-        <p>Auteur</p>
-        <input type="text" id="author" {...register('author')} />
+      <label htmlFor="url">
+        <p>Lien du projet</p>
+        <input type="text" id="url" {...register('url')} />
       </label>
       <label htmlFor="year">
-        <p>Année de publication</p>
+        <p>Année de réalisation</p>
         <input type="text" id="year" {...register('year')} />
       </label>
-      <label htmlFor="genre">
-        <p>Genre</p>
-        <input type="text" id="genre" {...register('genre')} />
+      <label htmlFor="desc">
+        <p>Description</p>
+        <input type="text" id="desc" {...register('desc')} />
       </label>
       {/*<label htmlFor="rate">
         <p>Note</p>
@@ -92,9 +92,9 @@ function WorkForm({ work, validate }) {
       <label htmlFor="file">
         <p>Visuel</p>
         <div className={styles.AddImage}>
-          {filePreview || work?.imageUrl ? (
+          {filePreview || work?.imgUrl ? (
             <>
-              <img src={filePreview ?? work?.imageUrl} alt="preview" />
+              <img src={filePreview ?? work?.imgUrl} alt="preview" />
               <p>Modifier</p>
             </>
           ) : (
