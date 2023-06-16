@@ -84,14 +84,9 @@ export async function addWork(data) {
   const work = {
     userId,
     title: data.title,
-    author: data.author,
+    url: data.url,
     year: data.year,
-    genre: data.genre,
-    ratings: [{
-      userId,
-      grade: data.rating ? parseInt(data.rating, 10) : 0,
-    }],
-    averageRating: parseInt(data.rating, 10),
+    desc: data.desc,
   };
   const bodyFormData = new FormData();
   bodyFormData.append('work', JSON.stringify(work));
@@ -119,9 +114,9 @@ export async function updateWork(data, id) {
   const work = {
     userId,
     title: data.title,
-    author: data.author,
+    url: data.url,
     year: data.year,
-    genre: data.genre,
+    desc: data.desc,
   };
   console.log(data.file[0]);
   if (data.file[0]) {

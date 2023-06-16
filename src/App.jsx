@@ -100,7 +100,7 @@ function App() {
         element: <AddWork cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
       },
       {
-        path: APP_PATHS.UPDATE_WORK,
+        path: `${APP_PATHS.UPDATE_WORK}/:workId`,
         element: <UpdateWork cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
       },
       {

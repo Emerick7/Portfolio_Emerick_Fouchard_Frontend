@@ -21,7 +21,7 @@ function UpdateWork() {
   }, [userLoading]);
   useEffect(() => {
     async function getItem() {
-      const data = await getWork(params.id);
+      const data = await getWork(params.workId);
       if (data) {
         setWork(data);
       }
@@ -44,7 +44,7 @@ function UpdateWork() {
           <div className={styles.Created}>
             <h1>Merci!</h1>
             <p>votre projet a bien été mis à jour</p>
-            <Link to="/" className="button">Retour à l&apos;accueil</Link>
+            <Link to={APP_PATHS.DASHBOARD} className="button">Retour au Dashboard</Link>
           </div>
         )}
       </div>

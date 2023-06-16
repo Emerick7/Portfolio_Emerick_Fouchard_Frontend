@@ -1,24 +1,27 @@
 import styles from './WorksScroll.module.css';
 import { useRef, useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { motion, useScroll } from "framer-motion";
-import Work from './SingleWork/SingleWork';
+import SingleWork from './SingleWork/SingleWork';
 import { getWorks } from '../../lib/common';
 
 function WorksScroll() {
+    //GET Works from API
+
     const [works, setWorks] = useState(null);
     const [loading, setLoading] = useState(true);
-    // eslint-disable-next-line max-len
-    const displayWorks = () => (works ? works.map((work) => <Work size={2} work={work} key={work.id} />) : <h1>Vide</h1>);
+
+    const displayWorks = () => (works ? works.map((work) => <Link to={work.url} target="_blank"> <SingleWork work={work} key={work.id} /> </Link>) : <h1>Vide</h1>);
 
     useEffect(() => {
-        async function getWorksList() {
+        async function getBooksList() {
           const data = await getWorks();
           if (data) {
             setWorks(data);
             setLoading(false);
           }
         }
-        getWorksList();
+        getBooksList();
       }, []);
 
     const ref = useRef(null);
@@ -37,10 +40,8 @@ function WorksScroll() {
                 style={{ pathLength: scrollXProgress }}
                 />
             </svg>
-            <ul ref={ref}>
-                <section className={styles.workList}>
+            <ul ref={ref} className={styles.WorksList}>
                     {loading ? <h1>Chargement</h1> : displayWorks()}
-                </section>
             </ul>
         </section>
     );

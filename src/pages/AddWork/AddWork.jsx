@@ -32,7 +32,7 @@ function AddWork() {
           <div className={styles.Created}>
             <h1>Merci!</h1>
             <p>votre projet a bien été publié</p>
-            <Link to="/" className="button">Retour à l&apos;accueil</Link>
+            <Link to={APP_PATHS.DASHBOARD} className="button">Retour au Dashboard</Link>
           </div>
 
         )}

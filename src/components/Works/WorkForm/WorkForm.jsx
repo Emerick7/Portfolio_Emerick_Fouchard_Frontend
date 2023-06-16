@@ -90,7 +90,7 @@ function WorkForm({ work, validate }) {
         </div>
         </label>*/}
       <label htmlFor="file">
-        <p>Visuel</p>
+        <p>Visuels du projet, images</p>
         <div className={styles.AddImage}>
           {filePreview || work?.imgUrl ? (
             <>
