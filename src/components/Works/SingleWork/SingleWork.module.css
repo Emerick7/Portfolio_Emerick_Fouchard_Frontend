@@ -1,10 +1,38 @@
 .WorkLi {
     height: 100%;
     width: 576px;
+    list-style-type: none;
+    border-radius: 15px;
 }
 
 .WorkLi img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 15px;
+}
+
+.WorkDetails {
+    position: relative;
+    bottom: 125px;
+    padding: 20px 40px;
+    background: rgba(253, 114, 114,0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.WorkDetails h3, p {
+    margin: 0;
+}
+
+.DivTitleYear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.TextTitleYear {
+    font-size: 23px;
+    font-weight: bold;
 }

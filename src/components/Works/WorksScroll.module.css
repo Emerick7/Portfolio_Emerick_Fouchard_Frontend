@@ -1,3 +1,7 @@
 .WorksList {
     height: 316px;
 }
+
+.WorksList a {
+    text-decoration: none;
+}
