@@ -1,7 +1,14 @@
 .WorksList {
+    display: flex;
+    flex-direction: row;
     height: 316px;
 }
 
 .WorksList a {
+    margin-right: 20px;
     text-decoration: none;
+}
+
+.WorksList a:last-of-type {
+    margin-right: 0;
 }
