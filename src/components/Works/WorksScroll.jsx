@@ -29,14 +29,14 @@ function WorksScroll() {
 
     return (
         <section>
-            <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+            <svg className={styles.Progress} width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="30" pathLength="1" className={styles.Bg} />
                 <motion.circle
                 cx="50"
                 cy="50"
                 r="30"
                 pathLength="1"
-                className="indicator"
+                className={styles.Indicator}
                 style={{ pathLength: scrollXProgress }}
                 />
             </svg>

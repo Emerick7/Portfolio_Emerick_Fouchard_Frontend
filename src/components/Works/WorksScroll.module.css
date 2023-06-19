@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     height: 316px;
+    overflow-x: scroll;
+    padding: 0 0 20px 0;
 }
 
 .WorksList a {
@@ -11,4 +13,41 @@
 
 .WorksList a:last-of-type {
     margin-right: 0;
+}
+
+.WorksList::-webkit-scrollbar {
+    width: 0;
+    height: 10px;
+}
+
+.WorksList::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #FD7272;
+}
+
+.WorksList::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: rgba(253, 114, 114,0.2);
+}
+
+.Progress {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-90deg);
+}
+
+.Progress > circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+}
+
+.Bg {
+    stroke: #FD7272;
+    opacity: 0.3;
+}
+
+.Indicator {
+    stroke: #FD7272;
 }

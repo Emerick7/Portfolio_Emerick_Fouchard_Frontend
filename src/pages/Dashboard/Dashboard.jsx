@@ -37,6 +37,7 @@ function Dashboard() {
 
     return (
         <React.StrictMode>
+            <Link to={APP_PATHS.HOME}>Retourner sur la page d'acccueil</Link>
             <Link to={APP_PATHS.ADD_WORK}>Ajouter un projet</Link>
             <section className={styles.workList}>
                 {loading ? <h1>Chargement</h1> : displayWorks()}
