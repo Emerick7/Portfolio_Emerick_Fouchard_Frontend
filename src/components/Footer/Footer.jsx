@@ -27,7 +27,7 @@ function Footer({ cursorVariant, setCursorVariant }) {
                 </Link>
                 <ul>
                     <motion.li whileHover={onHover} transition={transitionOnHover}>
-                        <Link to={APP_PATHS.PORTFOLIO} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                        <Link to={APP_PATHS.WORKS} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
                             Portfolio
                         </Link>
                     </motion.li>

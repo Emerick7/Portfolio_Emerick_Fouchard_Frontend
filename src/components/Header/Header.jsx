@@ -50,7 +50,7 @@ function Header({ cursorVariant, setCursorVariant }) {
             <nav className={styles.Nav}>
                 <ul>
                     <motion.li whileHover={onHover} transition={transitionOnHover}>
-                        <Link to={APP_PATHS.PORTFOLIO} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                        <Link to={APP_PATHS.WORKS} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
                             <img src={fileLogo} alt='portfolio_logo_emerick_fouchard'/>
                             Portfolio
                         </Link>
