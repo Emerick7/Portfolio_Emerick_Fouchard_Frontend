@@ -120,19 +120,20 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                 </Link>
             </div>
             <div className={styles.ImgDiv}>
-                <motion.img
+                <img
                     src={photoBackground}
                     className={styles.PhotoBackground}
-                    animate={{
+                    alt='emerick-fouchard-developpeur-full-stack-javascript-frontend-backend'
+                    /*animate={{
                         y: [0, 10, -10, 0],
                     }}
                     transition={{
                         delay: 8,
-                        duration: 5,
+                        duration: 8,
                         times: [0, 0.33, 0.67, 1],
                         repeat: Infinity,
                         //repeatDelay: 3
-                    }}
+                    }}*/
                     />
             </div>
         </React.StrictMode>
