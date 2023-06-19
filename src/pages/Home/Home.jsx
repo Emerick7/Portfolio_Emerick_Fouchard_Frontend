@@ -7,6 +7,7 @@ import IntroHomePage from '../../components/IntroHomePage/IntroHomePage';
 import ServicesSection from '../../components/Services/ServicesSection/ServicesSection';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import WorksScroll from '../../components/Works/WorksScroll';
+import StayConnected from '../../components/StayConnected/StayConnected';
 
 function Home({ cursorVariant, setCursorVariant }) {
     return (
@@ -18,9 +19,10 @@ function Home({ cursorVariant, setCursorVariant }) {
                         <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                         <IntroHomePage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     </section>
-                    <ServicesSection />
-                    <AboutMe />
-                    <WorksScroll />
+                    <ServicesSection cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>
+                    <AboutMe cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>
+                    <WorksScroll cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>
+                    <StayConnected cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>
                 </main>
             </div>
             <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />

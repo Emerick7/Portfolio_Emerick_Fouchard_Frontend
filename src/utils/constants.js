@@ -34,7 +34,7 @@ export const SOCIAL_PATHS = {
     LINKEDIN: 'https://www.linkedin.com/in/emerick-f-58b080131/',
     GITHUB: 'https://github.com/Emerick7',
     TWITTER: 'https://twitter.com/FouchardEmerick',
-    INSTAGRAM: '',
+    INSTAGRAM: 'https://www.instagram.com/kirem7/',
     TELEGRAM: ''
 };
 
