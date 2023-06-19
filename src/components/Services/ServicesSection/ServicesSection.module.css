@@ -15,3 +15,29 @@
     border-radius: 5px;
     margin: 8px 0;
 }
+
+.LinkToServices {
+    text-decoration: none;
+}
+
+.LinkToServices > div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: fit-content;
+}
+
+.LinkToServices p {
+    font-weight: 900;
+    margin: 0 10px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.DivAnimOnHover {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #FD7272;
+    border-radius: 50px;
+}

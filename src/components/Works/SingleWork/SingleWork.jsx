@@ -1,9 +1,7 @@
 import styles from './SingleWork.module.css';
 import React from 'react';
 import {
-    motion,
-    useScroll,
-    useTransform,
+    motion
   } from "framer-motion";
 
 function SingleWork({ work }) {

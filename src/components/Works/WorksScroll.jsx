@@ -28,7 +28,12 @@ function WorksScroll() {
     const { scrollXProgress } = useScroll({ container: ref });
 
     return (
-        <section>
+        <section className={styles.WorksSection}>
+            <div className={styles.ServiceTop}>
+                <h2>Mes Projets et Réalisations</h2>
+                <h3>Quelques uns de mes projets et réalisations passées</h3>
+                <hr className={styles.Separator}/>
+            </div>
             <svg className={styles.Progress} width="100" height="100" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="30" pathLength="1" className={styles.Bg} />
                 <motion.circle
