@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Typed from 'react-typed';
 import styles from './IntroHomePage.module.css';
 import photoBackground from '../../assets/photo_portfolio_emerick_fouchard.svg'
+import { CONTACT_PATHS } from '../../utils/constants';
+import { Link } from 'react-router-dom';
 
 function IntroHomePage({ cursorVariant, setCursorVariant }) {
     const hoverEnter = () => setCursorVariant("hover");
@@ -97,23 +99,25 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                     Jeune diplômé à l'issue d'une formation OpenClassrooms. 
                     Disponible et motivé pour mettre à profit mes compétences et enrichir mon expérience.
                 </motion.p>
-                <motion.button
-                    className={styles.ButtonContact}
-                    onMouseEnter={hoverEnter}
-                    onMouseLeave={hoverLeave}
-                    animate={{
-                        opacity: [0, 0.5, 1, 1, 1],
-                        scale: [1, 1, 2, 1, 1],
-                        rotate: [60, -180, 0, -60, 0],
-                      }}
-                      transition={{
-                        delay: 3.5,
-                        duration: 1.5,
-                        ease: "easeInOut",
-                        times: [0, 0.3, 0.7, 0.8, 1],
-                      }}>
-                    <span>Parlons</span><br/><span>ensemble</span>
-                </motion.button>
+                <Link to={CONTACT_PATHS.MAIL} className={styles.LinkToMail}>
+                    <motion.div
+                        className={styles.ButtonContact}
+                        onMouseEnter={hoverEnter}
+                        onMouseLeave={hoverLeave}
+                        animate={{
+                            opacity: [0, 0.5, 1, 1, 1],
+                            scale: [1, 1, 2, 1, 1],
+                            rotate: [60, -180, 0, -60, 0],
+                        }}
+                        transition={{
+                            delay: 3.5,
+                            duration: 1.5,
+                            ease: "easeInOut",
+                            times: [0, 0.3, 0.7, 0.8, 1],
+                        }}>
+                        <span>Parlons</span><span>ensemble</span>
+                    </motion.div>
+                </Link>
             </div>
             <div className={styles.ImgDiv}>
                 <img src={photoBackground} className={styles.PhotoBackground}/>

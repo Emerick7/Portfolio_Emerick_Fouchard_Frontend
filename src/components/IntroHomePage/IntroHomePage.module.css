@@ -28,13 +28,23 @@
     display: inline-block;
 }
 
+.LinkToMail {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    margin: 0 0 0 100px;
+}
+
 .ButtonContact {
-    height: 100px;
-    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
     border: 15px solid #f99191;
     border-radius: 50%;
     background-color: #FD7272;
-    margin: 0 0 0 100px;
 
     font-family: 'Nunito', sans-serif;
     color: #FFF;
@@ -47,6 +57,7 @@
 
 .ButtonContact span:first-of-type {
     font-size: 15px;
+    margin-bottom: 5px;
 }
 
 .ButtonContact span:last-of-type {
