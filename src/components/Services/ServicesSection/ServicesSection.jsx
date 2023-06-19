@@ -7,7 +7,10 @@ import ServicesArray from 'public-data/services';
 import { Link } from "react-router-dom";
 import { APP_PATHS } from "../../../utils/constants";
 
-function ServicesSection() {
+function ServicesSection({ cursorVariant, setCursorVariant }) {
+    const hoverEnter = () => setCursorVariant("hover");
+    const hoverLeave = () => setCursorVariant("default");
+
     const divVariants = {
         initial: { width: 50 },
         onHover: {
@@ -32,7 +35,7 @@ function ServicesSection() {
                     <ServiceOnScroll key={service.id} title={service.title} alt={service.alt} src={service.src} desc={service.desc} />
                 ))}
             </section>
-            <Link to={APP_PATHS.SERVICES} className={styles.LinkToServices}>
+            <Link to={APP_PATHS.SERVICES} className={styles.LinkToServices} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
                 <motion.div
                     initial="initial"
                     whileHover="onHover"

@@ -99,7 +99,7 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                     Jeune diplômé à l'issue d'une formation OpenClassrooms. 
                     Disponible et motivé pour mettre à profit mes compétences et enrichir mon expérience.
                 </motion.p>
-                <Link to={CONTACT_PATHS.MAIL} className={styles.LinkToMail}>
+                <Link to={CONTACT_PATHS.MAIL} className={styles.LinkToMail} target="_blank">
                     <motion.div
                         className={styles.ButtonContact}
                         onMouseEnter={hoverEnter}

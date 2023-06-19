@@ -6,13 +6,22 @@ import SingleWork from './SingleWork/SingleWork';
 import { getWorks } from '../../lib/common';
 import { APP_PATHS } from '../../utils/constants';
 
-function WorksScroll() {
+function WorksScroll({ cursorVariant, setCursorVariant }) {
+    const hoverEnter = () => setCursorVariant("hover");
+    const hoverLeave = () => setCursorVariant("default");
+
     //GET Works from API
 
     const [works, setWorks] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const displayWorks = () => (works ? works.map((work) => <Link to={work.url} target="_blank"> <SingleWork work={work} key={work.id} /> </Link>) : <h1>Vide</h1>);
+    const displayWorks = () => (works ? works.map(
+      (work) => 
+        <Link to={work.url} target="_blank" onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+          <SingleWork work={work} key={work.id} />
+        </Link>
+      ) : <h1>Vide</h1>
+    );
 
     useEffect(() => {
         async function getBooksList() {
@@ -71,7 +80,7 @@ function WorksScroll() {
                 <p>Vous voulez mieux connaître mon métier ?</p>
                 <p>Voir mon CV 👉</p>
             </div>
-            <Link to={APP_PATHS.RESUME} className={styles.LinkToResume}>
+            <Link to={APP_PATHS.RESUME} className={styles.LinkToResume} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
                 <motion.div
                     initial="initial"
                     whileHover="onHover"

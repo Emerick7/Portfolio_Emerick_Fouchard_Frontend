@@ -40,7 +40,9 @@ function Header({ cursorVariant, setCursorVariant }) {
                         to={CONTACT_PATHS.MAIL}
                         className={styles.ContactEmail}
                         onMouseEnter={hoverEnter}
-                        onMouseLeave={hoverLeave}>
+                        onMouseLeave={hoverLeave}
+                        target="_blank"
+                        >
                             <img src={mailLogo} alt='email_logo_emerick_fouchard'/>
                             fouchardemerick@gmail.com
                     </Link>

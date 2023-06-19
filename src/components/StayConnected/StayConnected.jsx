@@ -25,6 +25,7 @@ function StayConnected({cursorVariant, setCursorVariant}) {
                 to={CONTACT_PATHS.MAIL}
                 onMouseEnter={hoverEnter}
                 onMouseLeave={hoverLeave}
+                target="_blank"
                 >
                 fouchardemerick@gmail.com
             </Link>
