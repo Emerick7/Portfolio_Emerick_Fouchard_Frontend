@@ -1,0 +1,98 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.TopDivFooter {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.EmerickLogo {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+
+    font-family: 'Exo 2', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    text-decoration: none;
+    color: #CAD3C8;
+}
+
+.EmerickLogo span {
+    font-family: 'Rubik Iso', cursive;
+    font-style: bold;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    top: 2px;
+    color: #FD7272;
+}
+
+.TopDivFooter ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.TopDivFooter li {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.TopDivFooter li:last-of-type {
+    margin-right: 0;
+}
+
+.TopDivFooter a {
+    text-decoration: none;
+}
+
+.TopDivFooter p {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 25%;
+}
+
+.BottomDivFooter {
+    display: flex;
+    flex-direction: row;
+    height: 10px;
+    width: 95%;
+}
+
+.BottomDivFooter div {
+    height: 100%;
+    width: 25%;
+}
+
+.BottomDivFooter div:nth-child(1) {
+    background-color: #FC427B;
+}
+
+.BottomDivFooter div:nth-child(2) {
+    background-color: #FD7272;
+}
+
+.BottomDivFooter div:nth-child(3) {
+    background-color: #9AECDB;
+}
+
+.BottomDivFooter div:nth-child(4) {
+    background-color: #3B3B98;
+}
