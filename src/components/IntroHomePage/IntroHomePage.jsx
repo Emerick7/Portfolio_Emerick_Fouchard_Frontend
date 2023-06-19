@@ -78,7 +78,9 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                             'Je suis papa',
                             'Je suis mari',
                             'Je suis Développeur Front-End',
-                            'Je suis Développeur Back-End'
+                            'Je suis Développeur Back-End',
+                            'Je suis Développeur WordPress',
+                            'Je suis Consultant SEO'
                         ]}
                         typeSpeed={50}
                         backSpeed={80}
