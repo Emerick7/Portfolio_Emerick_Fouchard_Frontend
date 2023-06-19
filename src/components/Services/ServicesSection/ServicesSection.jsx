@@ -11,7 +11,7 @@ function ServicesSection() {
     const divVariants = {
         initial: { width: 50 },
         onHover: {
-            width: 180,
+            width: 250,
             transition: {
                 type: "spring",
                 bounce: 0.4,

@@ -78,3 +78,52 @@
     border-radius: 5px;
     margin: 8px 0;
 }
+
+.ToCVSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 80px 0 0 10%;
+}
+
+.ToCVParagraphDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ToCVParagraphDiv p {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.LinkToResume {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.LinkToResume > div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: fit-content;
+}
+
+.LinkToResume p {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 0 10px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.DivAnimOnHover {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #FD7272;
+    border-radius: 50px;
+}

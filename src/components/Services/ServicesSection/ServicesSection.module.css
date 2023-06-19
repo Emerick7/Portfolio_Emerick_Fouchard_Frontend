@@ -17,6 +17,10 @@
 }
 
 .LinkToServices {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10%;
     text-decoration: none;
 }
 
@@ -28,6 +32,7 @@
 }
 
 .LinkToServices p {
+    font-size: 1.5em;
     font-weight: 900;
     margin: 0 10px;
     text-transform: uppercase;
