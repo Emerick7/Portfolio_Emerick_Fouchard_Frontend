@@ -98,7 +98,7 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                         duration: 0.5
                     } 
                 }}>
-                    Jeune diplômé à l'issue d'une formation OpenClassrooms. 
+                    Développeur Full-Stack junior diplômé à l'issue d'une formation OpenClassrooms. 
                     Disponible et motivé pour mettre à profit mes compétences et enrichir mon expérience.
                 </motion.p>
                 <Link to={CONTACT_PATHS.MAIL} className={styles.LinkToMail} target="_blank">
