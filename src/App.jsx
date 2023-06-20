@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, createContext } from 'react';
 import {
   createBrowserRouter,
   RouterProvider
@@ -17,6 +17,8 @@ import Resume from './pages/Resume/Resume';
 import Services from './pages/Services/Services';
 import UpdateWork from './pages/UpdateWork/UpdateWork';
 import Dashboard from './pages/Dashboard/Dashboard';
+
+export const ThemeContext = createContext(null);
 
 function App() {
   const [user, setUser] = useState(null);
@@ -110,19 +112,27 @@ function App() {
     ]
   );
 
+  const [ theme, setTheme ] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === 'dark' ? 'light' : 'dark'));
+  };
+
   return (
-    <React.StrictMode>
-        <RouterProvider router={router} />
-        <motion.div
-          className='cursor'
-          style={{
-            translateX: cursorXSpring,
-            translateY: cursorYSpring,
-          }}
-          variants={variants}
-          animate={cursorVariant}
-        />
-    </React.StrictMode>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <div className='App' id={theme}>
+            <RouterProvider router={router} />
+            <motion.div
+              className='cursor'
+              style={{
+                translateX: cursorXSpring,
+                translateY: cursorYSpring,
+              }}
+              variants={variants}
+              animate={cursorVariant}
+            />
+        </div>
+    </ThemeContext.Provider>
   );
 }
 
