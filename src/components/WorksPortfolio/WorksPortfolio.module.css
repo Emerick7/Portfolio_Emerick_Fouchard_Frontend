@@ -1,0 +1,17 @@
+.WorksTop {
+    margin: 0 0 100px 10%;
+}
+
+.WorksTop h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.Separator {
+    width: 200px;
+    border: 3px solid;
+    border-radius: 5px;
+    margin: 8px 0;
+}

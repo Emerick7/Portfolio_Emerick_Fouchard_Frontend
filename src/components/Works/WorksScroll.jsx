@@ -5,6 +5,7 @@ import { motion, useScroll } from "framer-motion";
 import SingleWork from './SingleWork/SingleWork';
 import { getWorks } from '../../lib/common';
 import { APP_PATHS } from '../../utils/constants';
+import RedirectionBottomPage from '../RedirectionBottomPage/RedirectionBottomPage';
 
 function WorksScroll({ cursorVariant, setCursorVariant }) {
     const hoverEnter = () => setCursorVariant("hover");
@@ -17,7 +18,7 @@ function WorksScroll({ cursorVariant, setCursorVariant }) {
 
     const displayWorks = () => (works ? works.map(
       (work) => 
-        <Link to={work.url} target="_blank" onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+        <Link to={work.url} target="_blank" onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} key={work._id}>
           <SingleWork work={work} key={work.id} />
         </Link>
       ) : <h1>Vide</h1>
@@ -51,6 +52,13 @@ function WorksScroll({ cursorVariant, setCursorVariant }) {
       }
     }
 
+    // Texte redirection bottom page
+
+    const textParagraphs = {
+      textParagraph1: "Vous voulez mieux connaître mon métier ?",
+      textParagraph2: "Voir mon CV 👉",
+      buttonText: "Voir mon CV"
+    }
 
     return (
       <React.StrictMode>
@@ -75,24 +83,11 @@ function WorksScroll({ cursorVariant, setCursorVariant }) {
                     {loading ? <h1>Chargement</h1> : displayWorks()}
             </ul>
         </section>
-        <section className={styles.ToCVSection}>
-            <div className={styles.ToCVParagraphDiv}>
-                <p>Vous voulez mieux connaître mon métier ?</p>
-                <p>Voir mon CV 👉</p>
-            </div>
-            <Link to={APP_PATHS.RESUME} className={styles.LinkToResume} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
-                <motion.div
-                    initial="initial"
-                    whileHover="onHover"
-                    >
-                    <motion.div
-                        className={styles.DivAnimOnHover}
-                        variants={divVariants}
-                    />
-                    <p>Voir mon CV</p>
-                </motion.div>
-            </Link>
-        </section>
+        <RedirectionBottomPage 
+                cursorVariant={cursorVariant}
+                setCursorVariant={setCursorVariant}
+                textParagraphs={textParagraphs}
+                />
       </React.StrictMode>
     );
 }

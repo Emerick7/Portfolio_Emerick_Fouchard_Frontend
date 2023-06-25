@@ -9,7 +9,6 @@ import { APP_PATHS } from './utils/constants';
 import { useUser } from './lib/customHooks';
 import Home from './pages/Home/Home';
 import ErrorPage from './pages/Error/Error';
-import Work from './pages/Work/Work';
 import Works from './pages/Works/Works';
 import SignIn from './pages/SignIn/SignIn';
 import AddWork from './pages/AddWork/AddWork';
@@ -72,10 +71,6 @@ function App() {
         path: APP_PATHS.HOME,
         element: <Home cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />,
         errorElement: <ErrorPage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
-      },
-      {
-        path: APP_PATHS.WORK,
-        element: <Work cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
       },
       {
         path: APP_PATHS.WORKS,

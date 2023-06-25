@@ -10,7 +10,7 @@ export const APP_PATHS = {
     WORKS: '/portfolio',
     RESUME: '/resume',
     SERVICES: '/services',
-    WORK: '/works/:workId',
+    //WORK: '/works/:workId',
     ERROR_PAGE: '/error',
     SIGN_IN: '/connexion-secrète-pour-emerick-fouchard',
     ADD_WORK: '/page-secrète-d-ajout-de-projets',
