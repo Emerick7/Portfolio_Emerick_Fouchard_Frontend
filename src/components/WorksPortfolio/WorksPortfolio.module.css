@@ -1,3 +1,17 @@
+.WorksDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 50px;
+    margin: 0 10%;
+}
+
+.WorksDiv li {
+    height: auto;
+    width: auto;
+    aspect-ratio: 576 / 316;
+    margin: 0;
+}
+
 .WorksTop {
     margin: 0 0 100px 10%;
 }

@@ -19,10 +19,19 @@
     background: rgba(253, 114, 114,0.9);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin-bottom: -125px;
 }
 
 .WorkDetails h3, p {
     margin: 0;
+}
+
+.WorkDetails h3 {
+    max-height: 32px;
+}
+
+.WorkDetails p {
+    max-height: 43px;
 }
 
 .DivTitleYear {

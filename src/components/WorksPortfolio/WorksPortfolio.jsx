@@ -40,7 +40,7 @@ function WorksPortfolio({ cursorVariant, setCursorVariant }) {
         textParagraph2: "Voir mon CV 👉",
         buttonText: "Voir mon CV"
     }
-
+    
     return (
         <main>
             <article>
@@ -49,7 +49,9 @@ function WorksPortfolio({ cursorVariant, setCursorVariant }) {
                     <h3>Ce que j'ai déjà fait</h3>
                     <hr className={styles.Separator}/>
                 </div>
-                {loading ? <h1>Chargement</h1> : displayWorks()}
+                <div className={styles.WorksDiv}>
+                    {loading ? <h1>Chargement</h1> : displayWorks()}
+                </div>
             </article>
             <RedirectionBottomPage 
                 cursorVariant={cursorVariant}
