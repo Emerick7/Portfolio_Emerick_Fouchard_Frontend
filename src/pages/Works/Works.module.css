@@ -1,0 +1,6 @@
+.PageContainer {
+    margin: 64px 32px;
+    padding: 32px;
+    background-color: #2C3A47;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}

@@ -1,8 +1,16 @@
+.MainPortfolio {
+    margin: 50px 0;
+}
+
 .WorksDiv {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px 50px;
+    grid-gap: 50px;
     margin: 0 10%;
+}
+
+.WorksDiv a {
+    text-decoration: none;
 }
 
 .WorksDiv li {

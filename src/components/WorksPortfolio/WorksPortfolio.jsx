@@ -42,7 +42,7 @@ function WorksPortfolio({ cursorVariant, setCursorVariant }) {
     }
     
     return (
-        <main>
+        <main className={styles.MainPortfolio}>
             <article>
                 <div className={styles.WorksTop}>
                     <h2>Mon travail et mes projets</h2>
