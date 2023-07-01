@@ -37,7 +37,3 @@ export const SOCIAL_PATHS = {
     INSTAGRAM: 'https://www.instagram.com/kirem7/',
     TELEGRAM: ''
 };
-
-export const DOWNLOAD_PATHS = {
-    RESUME_PDF: '',
-};

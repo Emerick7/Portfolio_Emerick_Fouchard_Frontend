@@ -1,21 +1,23 @@
 import { Link } from 'react-router-dom';
 import styles from './Techs.module.css';
+import { motion } from 'framer-motion';
 
 function Techs({ cursorVariant, setCursorVariant, techs, titleH2 }) {
     const hoverEnter = () => setCursorVariant("hover");
     const hoverLeave = () => setCursorVariant("default");
 
     return (
-        <section>
+        <section className={styles.SectionTechs}>
             <h3>{titleH2}</h3>
-            {techs.map((tech) => (
-                    <div key={tech.id}>
-                        <span>{tech.name}</span>
+            <div className={styles.TechsContainer}>
+                {techs.map((tech) => (
+                    <motion.span title={tech.name} key={tech.id} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.8 }}>
                         <Link to={tech.link} target='_blank' onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
-                            <img src={tech.src} alt={tech.alt}/>
+                            <img className={styles.ImgTech} src={tech.src} alt={tech.alt}/>
                         </Link>
-                    </div>
+                    </motion.span>
                 ))}
+            </div>
         </section>
     );
 }

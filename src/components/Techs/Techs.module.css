@@ -1,0 +1,17 @@
+.SectionTechs {
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    background-color: #2f3e4b;
+    border: 3px solid #FD7272;
+    border-radius: 30px;
+}
+
+.TechsContainer span {
+    display: inline-block;
+    margin: 0 25px 10px 0;
+}
+
+.ImgTech {
+    height: 3rem;
+    width: auto;
+}
