@@ -1,7 +1,31 @@
+.ExpContainer {
+    margin-top: 150px;
+}
+
+.WorksTop {
+    margin-bottom: 100px;
+}
+
+.WorksTop h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.Separator {
+    width: 200px;
+    border: 3px solid;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
 .ArticleExp {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 .ArticleExp > section {
@@ -9,28 +33,34 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin-bottom: 50px;
 }
 
 .ArticleExp > section:nth-child(2n) {
     align-items: flex-end;
 }
 
-.ArticleExp > section > h3 {
-    max-width: 45%;
+.ArticleExp > section > h4 {
+    font-size: 1.1rem;
+    text-align: right;
+    width: 45%;
+}
+
+.ArticleExp > section:nth-child(2n) > h4 {
+    text-align: left;
 }
 
 .Timeline {
     position: relative;
-    bottom: 685px;
-    margin-bottom: -685px;
+    bottom: 78.5vh;
+    margin-bottom: -80vh;
+    height: 100%;
 }
 
 .Dot {
     position: relative;
     right: 5px;
-    bottom: 65px;
-    margin-bottom: 115px;
+    top: 2vh;
+    margin-bottom: 11.5vh;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -40,9 +70,9 @@
 
 .Line {
     position: relative;
-    bottom: 840px;
-    margin-bottom: -840px;
-    height: 650px;
+    bottom: 78vh;
+    margin-bottom: -95vh;
+    height: 67vh;
     width: 5px;
     background-color: #FD7272;
     z-index: 1;
