@@ -8,8 +8,15 @@ import ServicesSection from '../../components/Services/ServicesSection/ServicesS
 import AboutMe from '../../components/AboutMe/AboutMe';
 import WorksScroll from '../../components/Works/WorksScroll';
 import StayConnected from '../../components/StayConnected/StayConnected';
+import { APP_PATHS } from '../../utils/constants';
 
 function Home({ cursorVariant, setCursorVariant }) {
+    // Texte services button
+    const textServicesButton = {
+        buttonText: "Voir mes réalisations",
+        link: APP_PATHS.WORKS
+    }
+
     return (
         <React.StrictMode>
             <div className={styles.PageContainer}>
@@ -19,7 +26,7 @@ function Home({ cursorVariant, setCursorVariant }) {
                         <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                         <IntroHomePage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     </section>
-                    <ServicesSection cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>
+                    <ServicesSection cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} textServicesButton={textServicesButton}/>
                     <AboutMe cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>
                     <WorksScroll cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>
                     <StayConnected cursorVariant={cursorVariant} setCursorVariant={setCursorVariant}/>

@@ -57,7 +57,8 @@ function WorksScroll({ cursorVariant, setCursorVariant }) {
     const textParagraphs = {
       textParagraph1: "Vous voulez mieux connaître mon métier ?",
       textParagraph2: "Voir mon CV 👉",
-      buttonText: "Voir mon CV"
+      buttonText: "Voir mon CV",
+      link: APP_PATHS.RESUME
     }
 
     return (

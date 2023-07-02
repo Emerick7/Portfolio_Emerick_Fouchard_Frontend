@@ -10,6 +10,7 @@ import Techs from '../../components/Techs/Techs';
 import { FrontendTechs, BackendTechs, OtherTechs } from 'public-data/technologies';
 import ResumePDF from 'public-data/CV-Emerick-FOUCHARD-2023.pdf';
 import Experiences from '../../components/Experiences/Experiences';
+import { APP_PATHS } from '../../utils/constants';
 
 function Resume({ cursorVariant, setCursorVariant }) {
     const hoverEnter = () => setCursorVariant("hover");
@@ -42,7 +43,8 @@ function Resume({ cursorVariant, setCursorVariant }) {
     const textParagraphs = {
         textParagraph1: "Vous voulez voir mes services web ?",
         textParagraph2: "Voir mes Services 👉",
-        buttonText: "Voir mes services"
+        buttonText: "Voir mes services",
+        link: APP_PATHS.SERVICES
     }
 
     return(

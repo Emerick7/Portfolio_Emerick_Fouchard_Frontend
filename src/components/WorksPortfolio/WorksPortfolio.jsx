@@ -4,6 +4,7 @@ import SingleWork from '../Works/SingleWork/SingleWork';
 import { getWorks } from '../../lib/common';
 import { Link } from 'react-router-dom';
 import RedirectionBottomPage from '../RedirectionBottomPage/RedirectionBottomPage';
+import { APP_PATHS } from '../../utils/constants';
 
 function WorksPortfolio({ cursorVariant, setCursorVariant }) {
     const hoverEnter = () => setCursorVariant("hover");
@@ -38,7 +39,8 @@ function WorksPortfolio({ cursorVariant, setCursorVariant }) {
     const textParagraphs = {
         textParagraph1: "Vous voulez mieux connaître mon métier ?",
         textParagraph2: "Voir mon CV 👉",
-        buttonText: "Voir mon CV"
+        buttonText: "Voir mon CV",
+        link: APP_PATHS.RESUME
     }
     
     return (

@@ -27,7 +27,7 @@ function RedirectionBottomPage({ cursorVariant, setCursorVariant, textParagraphs
                 <p>{textParagraphs.textParagraph1}</p>
                 <p>{textParagraphs.textParagraph2}</p>
             </div>
-            <Link to={APP_PATHS.RESUME} className={styles.LinkTo} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+            <Link to={textParagraphs.link} className={styles.LinkTo} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
                 <motion.div
                     initial="initial"
                     whileHover="onHover"
