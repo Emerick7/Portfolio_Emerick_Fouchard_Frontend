@@ -26,6 +26,9 @@ import awsImg from '../../src/assets/OtherTechs/aws.svg';
 import webpackImg from '../../src/assets/OtherTechs/webpack.svg';
 import postmanImg from '../../src/assets/OtherTechs/postman.svg';
 import jestImg from '../../src/assets/OtherTechs/jest.svg';
+import GoogleAdsImg from '../../src/assets/OtherTechs/google-ads.svg';
+import DareboostImg from '../../src/assets/OtherTechs/dareboost.svg';
+import MajesticImg from '../../src/assets/OtherTechs/majestic.svg';
 
 export const FrontendTechs = [
     {
@@ -215,5 +218,26 @@ export const OtherTechs = [
         src: jestImg,
         alt: 'jest-tech-fullstack-developper-emerick-fouchard',
         link: 'https://jestjs.io/'
+    },
+    {
+        id: 8,
+        name: 'Google Ads',
+        src: GoogleAdsImg,
+        alt: 'Google-Ads-Adwords-tech-fullstack-developper-emerick-fouchard',
+        link: 'https://ads.google.com/intl/fr_fr/home/tools/keyword-planner/'
+    },
+    {
+        id: 9,
+        name: 'Dareboost',
+        src: DareboostImg,
+        alt: 'Dareboost-SEO-tech-fullstack-developper-emerick-fouchard',
+        link: 'https://www.dareboost.com/fr'
+    },
+    {
+        id: 10,
+        name: 'Majestic',
+        src: MajesticImg,
+        alt: 'Majestic-SEO-tech-fullstack-developper-emerick-fouchard',
+        link: 'https://majestic.com/'
     },
 ]

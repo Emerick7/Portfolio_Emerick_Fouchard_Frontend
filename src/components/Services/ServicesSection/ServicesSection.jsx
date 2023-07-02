@@ -27,7 +27,10 @@ function ServicesSection({ cursorVariant, setCursorVariant, textServicesButton }
         <article>
             <div className={styles.ServiceTop}>
                 <h2>Services</h2>
-                <h3>Ce que je peux faire</h3>
+                <h3>
+                    Vous dirigez une entreprise prospère ou vous avez de grands projets ? Il est temps pour vous d'avoir un site internet ou une application web qui démontre cela. 
+                    C’est là que l’intervention d’un webmaster et développeur web full-stack est importante. Choisissez la solution adaptée à vos besoins.
+                </h3>
                 <hr className={styles.Separator}/>
             </div>
             <section className={styles.ServicesSection}>

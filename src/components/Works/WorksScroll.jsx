@@ -66,7 +66,7 @@ function WorksScroll({ cursorVariant, setCursorVariant }) {
         <section className={styles.WorksSection}>
             <div className={styles.ServiceTop}>
                 <h2>Mes Projets et Réalisations</h2>
-                <h3>Quelques uns de mes projets et réalisations passées</h3>
+                <h3>Vous voulez voir des exemples de mon travail ? Voici quelques uns de mes projets et réalisations passées en tant que Développeur Web Full-stack et Webmaster.</h3>
                 <hr className={styles.Separator}/>
             </div>
             <svg className={styles.Progress} width="100" height="100" viewBox="0 0 100 100">

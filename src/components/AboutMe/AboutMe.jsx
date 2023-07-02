@@ -124,13 +124,18 @@ function AboutMe() {
                   </motion.div>
                 </motion.div>
                 <p>
-                  Je suis un Développeur Full-Stack junior passionné par la création d'applications web et autres applications depuis mon adolescence. 
+                  Je suis un Développeur Full-Stack et Webmaster basé à Besançon, et passionné par la création d'applications web et autres applications depuis mon adolescence. 
                   Mon épouse étant Indienne, nous sommes toujours entre la France et l'Inde. Mon métier me permet désormais de pouvoir travailler de n'importe où.
                   <br/><br/>
                   Diplômé avec une solide formation et une expérience pratique dans le développement front-end et back-end, 
                   je suis constamment motivé par le désir d'apprendre de nouvelles technologies et de relever des défis. 
                   Mon objectif est de créer des produits numériques qui offrent une expérience utilisateur exceptionnelle 
                   et qui répondent aux besoins spécifiques de mes clients.
+                  <br/><br/>
+                  Grâce à mes compétences étendues en développement front-end et back-end, je suis en mesure de concevoir et de mettre en œuvre des solutions web complètes, 
+                  du design initial à la mise en production. J'apprécie particulièrement l'optimisation des performances, la sécurisation des sites et l'amélioration de l'expérience utilisateur. 
+                  Travailler en tant que développeur web à Besançon quand je suis en France et dans la belle ville de Shillong quand je suis en Inde est un véritable plaisir, 
+                  et je suis toujours prêt à relever de nouveaux défis passionnants pour créer des projets web de qualité.
                 </p>
               </motion.div>
             </motion.article>

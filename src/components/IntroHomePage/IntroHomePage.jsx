@@ -75,6 +75,7 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                         strings={[
                             'Je suis Développeur Full-Stack',
                             'Je suis passioné de software et hardware',
+                            'Je suis Webmaster',
                             'Je suis papa',
                             'Je suis mari',
                             'Je suis Développeur Front-End',
@@ -88,7 +89,7 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                         loop
                     />
                 </motion.h2>
-                <motion.p
+                <motion.h3
                 initial={{ opacity: 0, y: 50 }}
                 animate={{
                     opacity: 1,
@@ -98,9 +99,9 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                         duration: 0.5
                     } 
                 }}>
-                    Développeur Full-Stack junior diplômé à l'issue d'une formation OpenClassrooms. 
-                    Disponible et motivé pour mettre à profit mes compétences et enrichir mon expérience.
-                </motion.p>
+                    Développeur Web Full-Stack et Webmaster diplômé d'une formation supérieure. 
+                    Disponible et motivé pour mettre à profit mes compétences pour faire grimper votre popularité sur Besançon ou ailleurs.
+                </motion.h3>
                 <Link to={CONTACT_PATHS.MAIL} className={styles.LinkToMail} target="_blank">
                     <motion.div
                         className={styles.ButtonContact}

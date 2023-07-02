@@ -57,7 +57,7 @@ function Resume({ cursorVariant, setCursorVariant }) {
                         <article>
                             <div className={styles.WorksTop}>
                                 <h2>Technologies que j'utilise</h2>
-                                <h3>Les langages, frameworks, librairies et outils que j'utilise pour mon travail</h3>
+                                <h3>Les langages, frameworks, librairies et outils que j'utilise dans mon métier de Développeur Web Full-stack et Webmaster</h3>
                                 <hr className={styles.Separator}/>
                             </div>
                             <Techs
