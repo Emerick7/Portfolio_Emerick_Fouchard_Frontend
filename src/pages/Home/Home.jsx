@@ -9,6 +9,7 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 import WorksScroll from '../../components/Works/WorksScroll';
 import StayConnected from '../../components/StayConnected/StayConnected';
 import { APP_PATHS } from '../../utils/constants';
+import { ScrollRestoration } from 'react-router-dom';
 
 function Home({ cursorVariant, setCursorVariant }) {
     // Texte services button
@@ -33,6 +34,7 @@ function Home({ cursorVariant, setCursorVariant }) {
                 </main>
             </div>
             <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <ScrollRestoration />
         </React.StrictMode>
     );
 }

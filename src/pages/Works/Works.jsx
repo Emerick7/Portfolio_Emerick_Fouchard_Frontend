@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import WorksPortfolio from '../../components/WorksPortfolio/WorksPortfolio';
 import styles from './Works.module.css';
 import SocialButtons from '../../components/SocialButtons/SocialButtons';
+import { ScrollRestoration } from 'react-router-dom';
 
 function Works({ cursorVariant, setCursorVariant }) {
     return(
@@ -16,6 +17,7 @@ function Works({ cursorVariant, setCursorVariant }) {
                 </div>
             </div>
             <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <ScrollRestoration />
         </React.StrictMode>
     );
 }

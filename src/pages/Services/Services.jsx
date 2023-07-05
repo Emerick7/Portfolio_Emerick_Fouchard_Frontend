@@ -5,6 +5,7 @@ import SocialButtons from '../../components/SocialButtons/SocialButtons';
 import Footer from '../../components/Footer/Footer';
 import ServicesSection from '../../components/Services/ServicesSection/ServicesSection';
 import { CONTACT_PATHS } from '../../utils/constants';
+import { ScrollRestoration } from 'react-router-dom';
 
 function Services({ cursorVariant, setCursorVariant }) {
     // Texte services button
@@ -25,6 +26,7 @@ function Services({ cursorVariant, setCursorVariant }) {
                 </div>
             </div>
             <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <ScrollRestoration />
         </React.StrictMode>
     );
 }

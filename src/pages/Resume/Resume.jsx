@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Resume.module.css';
-import { Link } from 'react-router-dom';
+import { Link, ScrollRestoration } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -105,6 +105,7 @@ function Resume({ cursorVariant, setCursorVariant }) {
                 </div>
             </div>
             <Footer cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <ScrollRestoration />
         </React.StrictMode>
     );
 }
