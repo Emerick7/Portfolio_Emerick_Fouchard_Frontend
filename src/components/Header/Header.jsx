@@ -2,6 +2,7 @@ import styles from './Header.module.css';
 import mailLogo from '../../assets/mail-logo.svg';
 import sunLogo from '../../assets/sun-logo.svg';
 import moonLogo from '../../assets/moon-logo.svg';
+import homeLogo from '../../assets/home.svg';
 import fileLogo from '../../assets/file-logo.svg';
 import resumeLogo from '../../assets/resume-logo.svg';
 import servicesLogo from '../../assets/services-pc-logo.svg';
@@ -48,29 +49,43 @@ function Header({ cursorVariant, setCursorVariant }) {
                     </Link>
                 </motion.div>
             </div>
-            <img src={sunLogo} className={styles.DBModeImg} onClick={darkBrightMode} alt='dark-bright-mode-emerick-fouchard' onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}/>
-            <nav className={styles.Nav}>
-                <ul>
-                    <motion.li whileHover={onHover} transition={transitionOnHover}>
-                        <Link to={APP_PATHS.WORKS} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
-                            <img src={fileLogo} alt='portfolio_logo_emerick_fouchard'/>
-                            Portfolio
-                        </Link>
-                    </motion.li>
-                    <motion.li whileHover={onHover} transition={transitionOnHover}>
-                        <Link to={APP_PATHS.RESUME} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
-                            <img src={resumeLogo} alt='Curriculum_Vitae_logo_emerick_fouchard'/>
-                            Curriculum Vitae
-                        </Link>
-                    </motion.li>
-                    <motion.li whileHover={onHover} transition={transitionOnHover}>
-                        <Link to={APP_PATHS.SERVICES} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
-                            <img src={servicesLogo} alt='services_logo_emerick_fouchard'/>
-                            Services
-                        </Link>
-                    </motion.li>
-                </ul>
-            </nav>
+            <div className={styles.DivHamburger}>
+                <input type="checkbox" className={styles.MenuInput}/>
+                    <span className={styles.MenuToggleSpan}></span>
+                    <span className={styles.MenuToggleSpan}></span>
+                    <span className={styles.MenuToggleSpan}></span>
+                <div className={styles.Menu}>
+                    <img src={sunLogo} className={styles.DBModeImg} onClick={darkBrightMode} alt='dark-bright-mode-emerick-fouchard' onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}/>
+                    <nav className={styles.Nav}>
+                        <ul>
+                            <motion.li whileHover={onHover} transition={transitionOnHover}>
+                                <Link to={APP_PATHS.HOME} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                                    <img src={homeLogo} alt='portfolio_logo_emerick_fouchard'/>
+                                    Home
+                                </Link>
+                            </motion.li>
+                            <motion.li whileHover={onHover} transition={transitionOnHover}>
+                                <Link to={APP_PATHS.WORKS} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                                    <img src={fileLogo} alt='portfolio_logo_emerick_fouchard'/>
+                                    Portfolio
+                                </Link>
+                            </motion.li>
+                            <motion.li whileHover={onHover} transition={transitionOnHover}>
+                                <Link to={APP_PATHS.RESUME} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                                    <img src={resumeLogo} alt='Curriculum_Vitae_logo_emerick_fouchard'/>
+                                    Curriculum Vitae
+                                </Link>
+                            </motion.li>
+                            <motion.li whileHover={onHover} transition={transitionOnHover}>
+                                <Link to={APP_PATHS.SERVICES} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
+                                    <img src={servicesLogo} alt='services_logo_emerick_fouchard'/>
+                                    Services
+                                </Link>
+                            </motion.li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
     );
 }

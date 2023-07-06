@@ -3,6 +3,7 @@
     padding: 32px;
     background-color: #2C3A47;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    overflow: hidden;
 }
 
 .ContentDiv {
@@ -14,7 +15,7 @@
     margin: 28vh 0 0 0;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
     .PageContainer {
         margin: 16px 8px;
     }

@@ -60,9 +60,24 @@
     margin-right: 5px;
 }
 
+.DivHamburger {
+    display: flex;
+    align-items: center;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+}
+
+.MenuInput, .MenuToggleSpan {
+    display: none;
+}
+
 .DBModeImg {
     height: 20px;
     width: 20px;
+    margin-right: 30px;
     filter: invert(94%) sepia(18%) saturate(99%) hue-rotate(61deg) brightness(88%) contrast(90%);
 }
 
@@ -80,6 +95,10 @@
     list-style-type: none;
 }
 
+.Nav li:first-of-type {
+    display: none;
+}
+
 .Nav a {
     display: flex;
     text-decoration: none;
@@ -90,4 +109,122 @@
     width: 20px;
     filter: invert(94%) sepia(18%) saturate(99%) hue-rotate(61deg) brightness(88%) contrast(90%);
     margin-right: 5px;
+}
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
+    .LeftSideHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .MailDiv {
+        margin: 0;
+    }
+
+    .DivHamburger {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    .MenuInput {
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    .MenuToggleSpan {
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    
+    .DivHamburger span:first-child {
+        transform-origin: 0% 0%;
+    }
+    
+    .DivHamburger span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    
+    .MenuInput:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: #36383F;
+    }
+    
+    .MenuInput:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    .MenuInput:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    .Menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 180px;
+        height: 1000vh;
+        margin: -71px 0 0 -110px;
+        padding: 20px;
+        padding-top: 150px;
+        background-color: #FD7272;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    .MenuInput:checked ~ .Menu {
+        transform: none;
+    }
+
+    .Nav ul {
+        flex-direction: column;
+    }
+    
+    .Nav li {
+        margin-left: 0;
+    }
+
+    .Nav li:first-of-type {
+        display: flex;
+    }
+
+    .Nav a {
+        color: #182C61;
+    }
+
+    .Nav img {
+        filter: invert(13%) sepia(34%) saturate(3232%) hue-rotate(208deg) brightness(98%) contrast(96%);
+    }
+
+    .DBModeImg {
+        margin-left: 20px;
+        filter: invert(13%) sepia(34%) saturate(3232%) hue-rotate(208deg) brightness(98%) contrast(96%);
+    }
+
+    .ContactEmail {
+        display: none;
+    }
 }
