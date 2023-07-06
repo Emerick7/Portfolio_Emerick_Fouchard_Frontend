@@ -46,3 +46,24 @@
     background-color: #FD7272;
     border-radius: 50px;
 }
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
+    .ToSection {
+        flex-direction: column;
+        align-items: baseline;
+        margin: 80px 0 0 0;
+    }
+
+    .ToParagraphDiv {
+        align-items: baseline;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .LinkTo {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        margin: 0;
+    }
+}

@@ -17,4 +17,10 @@
     .PageContainer {
         margin: 16px 8px;
     }
+
+    .TopSection {
+        flex-direction: column-reverse;
+        align-items: baseline;
+        margin: 40px 0 120px;
+    }
 }

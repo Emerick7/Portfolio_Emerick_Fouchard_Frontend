@@ -96,3 +96,32 @@
 .BottomDivFooter div:nth-child(4) {
     background-color: #3B3B98;
 }
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
+    .Footer {
+        margin-bottom: 20px;
+    }
+
+    .TopDivFooter {
+        margin-bottom: 65px;
+    }
+
+    .EmerickLogo {
+        width: 50%;
+    }
+
+    .TopDivFooter ul{
+        position: relative;
+        top: 100px;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -100%;
+        width: 100%;
+    }
+
+    .TopDivFooter p {
+        font-size: 0.8em;
+        width: 50%;
+        text-align: end;
+    }
+}
