@@ -46,7 +46,7 @@ function SignIn({ setUser }) {
     }
   };
 
-  const signUp = async () => {
+  /*const signUp = async () => {
     try {
       setIsLoading(true);
       const response = await axios({
@@ -68,7 +68,7 @@ function SignIn({ setUser }) {
     } finally {
       setIsLoading(false);
     }
-  };
+  };*/
   const errorClass = notification.error ? styles.Error : null;
   return (
     <div className={`${styles.SignIn} container`}>
@@ -112,7 +112,7 @@ function SignIn({ setUser }) {
               Se connecter
             </span>
           </button>
-          <span>OU</span>
+          {/*<span>OU</span>
           <button
             type="submit"
             className="
@@ -128,7 +128,7 @@ function SignIn({ setUser }) {
             <span>
               {'S\'inscrire'}
             </span>
-          </button>
+            </button>*/}
         </div>
 
       </div>

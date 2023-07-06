@@ -1,0 +1,41 @@
+.PageContainer {
+    margin: 64px 32px;
+    padding: 32px;
+    background-color: #2C3A47;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.ErrorPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    font-style: normal;
+    line-height: 142.6%;
+}
+
+.ErrorStatus {
+    font-weight: 700;
+    font-size: 288px;
+    margin: 238px 0 198px 0;
+    color: #FD7272;
+}
+
+.ErrorDesc {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    margin-bottom: 182px;
+}
+
+.HomeLink {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration-line: underline;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .PageContainer {
+        margin: 16px 8px;
+    }
+}

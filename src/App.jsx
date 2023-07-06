@@ -89,6 +89,7 @@ function App() {
         element: <SignIn
                     cursorVariant={cursorVariant} 
                     setCursorVariant={setCursorVariant} 
+                    user={user}
                     setUser={setUser}
                     />
       },
@@ -102,7 +103,12 @@ function App() {
       },
       {
         path: APP_PATHS.DASHBOARD,
-        element: <Dashboard cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+        element: <Dashboard 
+                    cursorVariant={cursorVariant} 
+                    setCursorVariant={setCursorVariant}
+                    user={user} 
+                    setUser={setUser}
+                    />
       }
     ]
   );

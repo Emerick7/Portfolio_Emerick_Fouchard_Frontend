@@ -13,3 +13,9 @@
 .ContentDiv > aside {
     margin: 28vh 0 0 0;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .PageContainer {
+        margin: 16px 8px;
+    }
+}

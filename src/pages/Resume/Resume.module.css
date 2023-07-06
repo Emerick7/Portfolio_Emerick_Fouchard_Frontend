@@ -75,3 +75,9 @@
     background-color: #FD7272;
     border-radius: 50px;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .PageContainer {
+        margin: 16px 8px;
+    }
+}
