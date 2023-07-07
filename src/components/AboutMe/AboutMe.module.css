@@ -104,7 +104,41 @@
     background: linear-gradient(306deg, rgb(252, 66, 123), rgb(253, 114, 114));
 }
 
-@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
+@media only screen and (min-width : 481px) and (max-width : 1065px) {
+    .AboutMeCard {
+        height: 450px;
+        width: 80vw;
+    }
+
+    .Div > div > img {
+        display: none;
+    }
+
+    .AboutMeDesc {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .AboutMeDesc > h2 {
+        font-size: 1.2em;
+    }
+    
+    .AboutMeDesc > h3 {
+        font-size: 1em;
+        margin: 0.2em 0;
+    }
+
+    .Div > div > div:last-of-type > div {
+        display: none;
+    }
+
+    .SplashWallet {
+        left: 0;
+        width: 85vw;
+    }
+}
+
+@media only screen and (min-width : 280px) and (max-width : 480px) {
     .AboutMeCard {
         height: 30vh;
         width: 80vw;

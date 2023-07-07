@@ -78,7 +78,13 @@
     z-index: 1;
 }
 
-@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
+@media only screen and (min-width : 481px) and (max-width : 1065px) {
+    .Line {
+        bottom: 77vh;
+    }
+}
+
+@media only screen and (min-width : 280px) and (max-width : 480px) {
     .WorksTop h2 {
         line-height: 40px;
     }

@@ -42,7 +42,20 @@
     stroke: #FD7272;
 }
 
-@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
+@media only screen and (min-width : 481px) and (max-width : 1065px) {
+    .ServiceDiv {
+        display: flex;
+        align-items: center;
+        height: 80%;
+        padding: 0;
+    }
+    
+    .ServiceDiv img {
+        height: 165px;
+    }
+}
+
+@media only screen and (min-width : 280px) and (max-width : 480px) {
     .ServiceDiv {
         width: 100%;
     }
