@@ -68,3 +68,9 @@
         transform: translateY(-100px) rotate(-90deg);
     }
 }
+
+@media only screen and (max-width : 413px) and (max-height: 800px) {
+    .ServiceDiv img {
+        height: 100px;
+    }
+}

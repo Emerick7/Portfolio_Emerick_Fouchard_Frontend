@@ -141,3 +141,17 @@
         left: 30%;
     }
 }
+
+@media only screen and (max-width : 413px) and (max-height: 800px) {
+    .WorksSection {
+        height: 140vh;
+    }
+
+    .ServiceTop h2 {
+        font-size: 35px;
+    }
+
+    .Progress {
+        left: 25%;
+    }
+}

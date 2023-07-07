@@ -171,3 +171,23 @@
         width: 85vw;
     }
 }
+
+@media only screen and (max-width : 413px) and (max-height: 800px) {
+    .AboutMeDesc > h2 {
+        font-size: 1em;
+    }
+    
+    .AboutMeDesc > h3 {
+        font-size: 0.6em;
+        margin: 0.4em 0;
+    }
+
+    .Div > p {
+        font-size: 0.6em;
+        height: 95%;
+    }
+
+    .SplashWallet {
+        left: -15px;
+    }
+}

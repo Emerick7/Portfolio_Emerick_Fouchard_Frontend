@@ -112,3 +112,9 @@
         height: 700px;
     }
 }
+
+@media only screen and (max-width : 413px) and (max-height: 800px) {
+    .WorksTop h2 {
+        font-size: 30px;
+    }
+}
