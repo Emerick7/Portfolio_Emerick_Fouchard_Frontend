@@ -52,6 +52,10 @@
         margin: 0;
     }
 
+    .ServiceTop h2 {
+        line-height: 40px;
+    }
+
     .LinkToServices {
         margin-left: 0;
     }

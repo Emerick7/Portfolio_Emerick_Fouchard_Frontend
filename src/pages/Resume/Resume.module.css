@@ -81,4 +81,20 @@
     .PageContainer {
         margin: 16px 8px;
     }
+
+    .ContentDiv {
+        flex-direction: column-reverse;
+    }
+
+    .ContentDiv > aside {
+        margin: 50px 0 0 0;
+    }
+
+    .ContentDiv main {
+        margin: 50px 0;
+    }
+
+    .WorksTop h2 {
+        line-height: 40px;
+    }
 }

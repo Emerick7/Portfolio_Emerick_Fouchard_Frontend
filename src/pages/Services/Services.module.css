@@ -27,4 +27,16 @@
     .PageContainer {
         margin: 16px 8px;
     }
+
+    .ContentDiv {
+        flex-direction: column-reverse;
+    }
+
+    .ContentDiv main {
+        margin: 50px 0;
+    }
+
+    .ContentDiv > aside {
+        margin: 50px 0 0 0;
+    }
 }
