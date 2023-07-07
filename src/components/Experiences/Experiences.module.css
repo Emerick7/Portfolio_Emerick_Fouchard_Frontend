@@ -118,3 +118,24 @@
         font-size: 30px;
     }
 }
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .ArticleExp {
+        height: 850px;
+    }
+
+    .Timeline {
+        bottom: 765px;
+        margin-bottom: -765px;
+    }
+
+    .Dot {
+        margin-bottom: 118px;
+    }
+
+    .Line {
+        bottom: 785px;
+        margin-bottom: -785px;
+        height: 670px;
+    }
+}

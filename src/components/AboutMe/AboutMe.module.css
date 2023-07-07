@@ -34,7 +34,7 @@
 
 .Div > p {
     width: auto;
-    height: 100%;
+    height: 90%;
     padding: 3vmin 4vmin;
     background: linear-gradient(306deg, rgb(24, 44, 97), rgb(59, 59, 152));
     box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
