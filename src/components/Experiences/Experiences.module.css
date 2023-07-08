@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 850px;
 }
 
 .ArticleExp > section {
@@ -51,8 +51,8 @@
 
 .Timeline {
     position: relative;
-    bottom: 78.5vh;
-    margin-bottom: -80vh;
+    bottom: 765px;
+    margin-bottom: -765px;
     height: 100%;
 }
 
@@ -60,7 +60,7 @@
     position: relative;
     right: 5px;
     top: 2vh;
-    margin-bottom: 11.5vh;
+    margin-bottom: 118px;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -70,9 +70,9 @@
 
 .Line {
     position: relative;
-    bottom: 78vh;
-    margin-bottom: -95vh;
-    height: 67vh;
+    bottom: 780px;
+    margin-bottom: -780px;
+    height: 665px;
     width: 5px;
     background-color: #FD7272;
     z-index: 1;
@@ -80,7 +80,8 @@
 
 @media only screen and (min-width : 481px) and (max-width : 1065px) {
     .Line {
-        bottom: 77vh;
+        bottom: 775px;
+        margin-bottom: -775px;
     }
 }
 
@@ -134,8 +135,8 @@
     }
 
     .Line {
-        bottom: 785px;
-        margin-bottom: -785px;
+        bottom: 780px;
+        margin-bottom: -780px;
         height: 670px;
     }
 }
