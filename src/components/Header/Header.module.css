@@ -234,3 +234,10 @@
         display: none;
     }
 }
+
+@media (max-width: 655px) and (orientation: landscape) {
+    .DBModeImg {
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+}

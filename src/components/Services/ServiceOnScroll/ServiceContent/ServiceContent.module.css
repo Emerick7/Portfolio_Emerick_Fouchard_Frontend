@@ -43,3 +43,25 @@
         font-size: 0.7em;
     }
 }
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .Description h2 {
+        font-size: 1em;
+        margin: 0.5em 0;
+    }
+
+    .Description p {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 655px) and (orientation: landscape) {
+    .Description h2 {
+        font-size: 1em;
+        margin: 0.3em 0;
+    }
+
+    .Description p {
+        font-size: 0.6em;
+    }
+}

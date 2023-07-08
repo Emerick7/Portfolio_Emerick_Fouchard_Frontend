@@ -69,7 +69,7 @@
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    line-height: 25px;
+    line-height: 40px;
 }
 
 .Separator {
@@ -153,5 +153,17 @@
 
     .Progress {
         left: 25%;
+    }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+    .WorksSection {
+        height: 165vh;
+    }
+}
+
+@media (max-width: 655px) and (orientation: landscape) {
+    .WorksSection {
+        height: 100vw;
     }
 }

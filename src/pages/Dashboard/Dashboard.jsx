@@ -55,8 +55,9 @@ function Dashboard({ user, setUser }) {
         if(event.key && event.key !== "enter"){
             return
         }
-        console.log(workId);
         await deleteWork(workId);
+        // eslint-disable-next-line no-restricted-globals
+        location.reload();
     };
 
     return (

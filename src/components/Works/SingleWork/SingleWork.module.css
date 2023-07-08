@@ -94,3 +94,9 @@
         margin-bottom: -100px;
     }
 }
+
+@media (max-width: 655px) and (orientation: landscape) {
+    .WorkLi {
+        width: 400px;
+    }
+}

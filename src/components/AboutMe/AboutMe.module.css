@@ -191,3 +191,13 @@
         left: -15px;
     }
 }
+
+@media (max-width: 655px) and (orientation: landscape) {
+    .AboutMeCard {
+        height: 250px;
+    }
+
+    .SplashWallet {
+        left: -3%;
+    }
+}
