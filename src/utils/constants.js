@@ -1,8 +1,19 @@
-const API_URL = 'http://localhost:4000';
+const prod = {
+    url: {
+        API_URL: 'https://api.emerickfouchard.fr'
+    }
+};
+const dev = {
+    url: {
+        API_URL: 'http://localhost:4000'
+    }
+};
+export const config = process.env.NODE_ENV === 'development' ? dev : prod;
+
 export const API_ROUTES = {
-  SIGN_UP: `${API_URL}/api/auth/signup`,
-  SIGN_IN: `${API_URL}/api/auth/login`,
-  WORKS: `${API_URL}/api/works`,
+  SIGN_UP: `${config.url.API_URL}/api/auth/signup`,
+  SIGN_IN: `${config.url.API_URL}/api/auth/login`,
+  WORKS: `${config.url.API_URL}/api/works`,
 };
 
 export const APP_PATHS = {
