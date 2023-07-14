@@ -29,7 +29,7 @@ function Dashboard({ user, setUser }) {
     const [loading, setLoading] = useState(true);
 
     const displayWorks = () => (works ? works.map((work) => 
-        <React.StrictMode>
+        <div key={work._id}>
             <Link to={`${APP_PATHS.UPDATE_WORK}/${work._id}`}>Modifier</Link>
             <button
                 onKeyUp={(event) => onDelete(event, work._id)}
@@ -37,8 +37,8 @@ function Dashboard({ user, setUser }) {
                 >
                     Supprimer
             </button>
-            <SingleWork work={work} key={work._id} />
-        </React.StrictMode>) : <h1>Vide</h1>);
+            <SingleWork work={work} />
+        </div>) : <h1>Vide</h1>);
 
     useEffect(() => {
         async function getBooksList() {
