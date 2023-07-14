@@ -2,11 +2,11 @@
 
 Hi 👋, curious!
 
-┻┳|
-┳┻| _
-┻┳| •.•)
-┳┻|⊂ﾉ
-┻┳|
+┻┳|\
+┳┻| _\
+┻┳| •.•)\
+┳┻|⊂ﾉ\
+┻┳|\
 
 If you are here, you are probably wondering how this site how this portfolio was made (and how can it be so cool).
 
@@ -14,12 +14,12 @@ Please feel free to check it out yourself to have an idea about how I work on my
 
 Also, you can contact me on :
 
-WHATSAPP: 'https://wa.me/33666483474'
-LINKEDIN: 'https://www.linkedin.com/in/emerick-f-58b080131/',
-GITHUB: 'https://github.com/Emerick7',
-TWITTER: 'https://twitter.com/FouchardEmerick',
-INSTAGRAM: 'https://www.instagram.com/kirem7/',
-EMAIL: fouchardemerick@gmail.com
+- WHATSAPP: 'https://wa.me/33666483474'
+- LINKEDIN: 'https://www.linkedin.com/in/emerick-f-58b080131/',
+- GITHUB: 'https://github.com/Emerick7',
+- TWITTER: 'https://twitter.com/FouchardEmerick',
+- INSTAGRAM: 'https://www.instagram.com/kirem7/',
+- EMAIL: fouchardemerick@gmail.com
 
 Feel free to contact me anytime ✨.
 
