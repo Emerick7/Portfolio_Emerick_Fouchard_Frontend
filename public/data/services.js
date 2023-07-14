@@ -9,7 +9,7 @@ const ServicesArray = [
         title: "Applications Frontend",
         alt: 'frontend-developement-responsive-desktop-mobile-emerick-fouchard',
         src: frontendLogo,
-        desc: "Création d'applications côté client avec des fonctionnalités modernes telles que SPA (Single Page Application) et maintient du style de codage sémantique parmi d'autres meilleures pratiques pour l'optimisation du référencement. Utilisation des technologies modernes telles que React, framer-motion et GSAP."
+        desc: "Création d'applications (côté client) avec des fonctionnalités modernes telles que SPA (Single Page Application) et maintient du style de codage sémantique ainsi que d'autres des meilleures pratiques pour l'optimisation du référencement. Utilisation des technologies modernes telles que React, framer-motion et GSAP."
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ const ServicesArray = [
         title: "Consultant SEO",
         alt: 'SEO-optimisation-emerick-fouchard',
         src: seoLogo,
-        desc: "Analyse poussée de sites web et du marché visé pour optimiser le référencement de ceux-ci en fonction des besoins et du budget. Rédaction de rapports de référencement ainsi qu'une explication détaillée sur mesure des objectifs de référencement. Utilisation d'outils poussés pour l'analyse tels que Google Keyword Planner (Google Ads), Dareboost et Majestic."
+        desc: "Analyse de sites web et du marché visé pour optimiser le référencement de ceux-ci en fonction des besoins et du budget. Rédaction de rapports de référencement ainsi qu'un compte-rendu détaillé sur mesure des objectifs de référencement. Utilisation d'outils reconnus pour l'analyse tels que Google Keyword Planner (Google Ads), Dareboost et Majestic."
     },
 ]
 

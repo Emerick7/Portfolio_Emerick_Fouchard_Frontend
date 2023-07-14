@@ -48,7 +48,7 @@ function WorksPortfolio({ cursorVariant, setCursorVariant }) {
             <article>
                 <div className={styles.WorksTop}>
                     <h2>Mon travail et mes projets</h2>
-                    <h3>Voici quelques uns de mes projets et réalisations passées en tant que Développeur Web Full-stack et Webmaster.</h3>
+                    <h3>Voici quelques uns de mes projets et réalisations en tant que Développeur Web Full-stack et Webmaster.</h3>
                     <hr className={styles.Separator}/>
                 </div>
                 <div className={styles.WorksDiv}>

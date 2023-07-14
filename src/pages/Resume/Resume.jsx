@@ -35,7 +35,7 @@ function Resume({ cursorVariant, setCursorVariant }) {
     const titleH2 = {
         frontendTechs: "La liste non exaustive des technologies que j'utilise pour créer des applications côté client",
         backendTechs: "La liste non exaustive des technologies que j'utilise pour créer des applications backend rapides et évolutives",
-        otherTechs: "D'autres... et plus encore !"
+        otherTechs: "D'autres outils... et plus encore !"
     }
 
     // Texte redirection bottom page
@@ -57,7 +57,7 @@ function Resume({ cursorVariant, setCursorVariant }) {
                         <article>
                             <div className={styles.WorksTop}>
                                 <h2>Technologies que j'utilise</h2>
-                                <h3>Les langages, frameworks, librairies et outils que j'utilise dans mon métier de Développeur Web Full-stack et Webmaster</h3>
+                                <h3>Langages, frameworks, librairies et outils que j'utilise dans mon métier de Développeur Web Full-stack et Webmaster</h3>
                                 <hr className={styles.Separator}/>
                             </div>
                             <Techs

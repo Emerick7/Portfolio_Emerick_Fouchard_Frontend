@@ -11,7 +11,7 @@ function Techs({ cursorVariant, setCursorVariant, techs, titleH2 }) {
             <h3>{titleH2}</h3>
             <div className={styles.TechsContainer}>
                 {techs.map((tech) => (
-                    <motion.span title={tech.name} key={tech.id} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.8 }}>
+                    <motion.span data-title={tech.name} key={tech.id} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.8 }}>
                         <Link to={tech.link} target='_blank' onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
                             <img className={styles.ImgTech} src={tech.src} alt={tech.alt}/>
                         </Link>

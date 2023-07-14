@@ -9,7 +9,7 @@ function Experiences() {
         <div className={styles.ExpContainer}>
             <div className={styles.WorksTop}>
                 <h2>Expérience professionnelle</h2>
-                <h3>Une timeline de mes expériences professionnelles marquantes</h3>
+                <h3>Historique de mes expériences professionnelles marquantes</h3>
                 <hr className={styles.Separator}/>
             </div>
             <article className={styles.ArticleExp}>
@@ -23,13 +23,13 @@ function Experiences() {
                     <h4>Youtube (choix du contenu, montage, gestion des vidéos) (2021 - 2021)</h4>
                 </section>
                 <section>
-                    <h4>Développeur WordPress, réalisation et maintenance (2020)</h4>
+                    <h4>Développeur WordPress, réalisation et maintenance (2020 à ce jour)</h4>
                 </section>
                 <section>
-                    <h4>Consultant en référencement SEO (2022)</h4>
+                    <h4>Consultant en référencement SEO (2022 à ce jour)</h4>
                 </section>
                 <section>
-                    <h4>Développeur Web Full-Stack JavaScript (2023)</h4>
+                    <h4>Développeur Web Full-Stack JavaScript (2023 à ce jour)</h4>
                 </section>
                 <div className={styles.Timeline}>
                     <div className={styles.Dot}/>

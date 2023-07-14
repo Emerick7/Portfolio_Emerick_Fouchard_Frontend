@@ -2,6 +2,7 @@ import styles from './RedirectionBottomPage.module.css';
 import { APP_PATHS } from '../../utils/constants';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
 
 function RedirectionBottomPage({ cursorVariant, setCursorVariant, textParagraphs }) {
     const hoverEnter = () => setCursorVariant("hover");
@@ -9,10 +10,20 @@ function RedirectionBottomPage({ cursorVariant, setCursorVariant, textParagraphs
 
     //Variants pour bouton
 
+    const ref = useRef();
+    const [parentWidth, setParentWidth] = useState(0);
+
+    useEffect(() => {
+        if (!ref?.current?.parentElement?.clientWidth) {
+          return;
+        }
+        setParentWidth(ref?.current?.parentElement?.clientWidth);
+      }, [ref?.current?.parentElement?.clientWidth]);
+
     const divVariants = {
         initial: { width: 50 },
         onHover: {
-            width: 180,
+            width: parentWidth,
             transition: {
                 type: "spring",
                 bounce: 0.4,
@@ -35,6 +46,7 @@ function RedirectionBottomPage({ cursorVariant, setCursorVariant, textParagraphs
                     <motion.div
                         className={styles.DivAnimOnHover}
                         variants={divVariants}
+                        ref={ref}
                     />
                     <p>{textParagraphs.buttonText}</p>
                 </motion.div>

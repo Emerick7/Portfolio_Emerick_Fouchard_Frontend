@@ -100,7 +100,7 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                     } 
                 }}>
                     Développeur Web Full-Stack et Webmaster diplômé d'une formation supérieure. 
-                    Disponible et motivé pour mettre à profit mes compétences pour faire grimper votre popularité sur Besançon ou ailleurs.
+                    Disponible et motivé pour mettre à votre profit mes compétences pour faire grimper votre popularité sur Besançon ou ailleurs.
                 </motion.h3>
                 <Link to={CONTACT_PATHS.MAIL} className={styles.LinkToMail} target="_blank">
                     <motion.div

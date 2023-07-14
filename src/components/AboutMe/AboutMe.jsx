@@ -125,11 +125,11 @@ function AboutMe() {
                 </motion.div>
                 <p>
                   Je suis un Développeur Full-Stack et Webmaster basé à Besançon, et passionné par la création d'applications web et autres applications depuis mon adolescence. 
-                  Mon épouse étant Indienne, nous sommes toujours entre la France et l'Inde. Mon métier me permet désormais de pouvoir travailler de n'importe où.
+                  Mon épouse étant Indienne, nous sommes toujours entre la France et l'Inde. Mon métier me permet de pouvoir travailler de n'importe où.
                   <br/><br/>
                   Diplômé avec une solide formation et une expérience pratique dans le développement front-end et back-end, 
-                  je suis constamment motivé par le désir d'apprendre de nouvelles technologies et de relever des défis. 
-                  Mon objectif est de créer des produits numériques qui offrent une expérience utilisateur exceptionnelle 
+                  je suis motivé par le désir d'apprendre de nouvelles technologies et de relever des défis. 
+                  Mon objectif est de créer des produits numériques qui offrent une expérience utilisateur de qualité 
                   et qui répondent aux besoins spécifiques de mes clients.
                   <br/><br/>
                   Grâce à mes compétences étendues en développement front-end et back-end, je suis en mesure de concevoir et de mettre en œuvre des solutions web complètes, 

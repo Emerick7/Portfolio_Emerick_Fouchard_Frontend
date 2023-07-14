@@ -20,7 +20,7 @@ function Services({ cursorVariant, setCursorVariant }) {
                 <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                 <div className={styles.ContentDiv}>
                     <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
-                    <main>
+                    <main className={styles.Main}>
                     <ServicesSection cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} textServicesButton={textServicesButton}/>
                     </main>
                 </div>
