@@ -17,7 +17,7 @@ function ServiceOnScroll({ title, alt, src, desc }) {
 
     return (
         <section className="service-container">
-            <div ref={ref} className={styles.ServiceDiv}>
+            <div ref={ref} className={`${styles.ServiceDiv} service-div`}>
                 <figure className={styles.Progress}>
                     <svg id="progress" width="75" height="75" viewBox="0 0 100 100">
                         <circle cx="50" cy="50" r="30" pathLength="1" className={styles.Bg} />

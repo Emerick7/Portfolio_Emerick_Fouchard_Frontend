@@ -7,9 +7,9 @@ function Techs({ cursorVariant, setCursorVariant, techs, titleH2 }) {
     const hoverLeave = () => setCursorVariant("default");
 
     return (
-        <section className={styles.SectionTechs}>
+        <section className={`${styles.SectionTechs} section-techs`}>
             <h3>{titleH2}</h3>
-            <div className={styles.TechsContainer}>
+            <div className={`${styles.TechsContainer} techs-container`}>
                 {techs.map((tech) => (
                     <motion.span data-title={tech.name} key={tech.id} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.8 }}>
                         <Link to={tech.link} target='_blank' onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>

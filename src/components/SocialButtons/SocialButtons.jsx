@@ -19,7 +19,7 @@ function SocialButtons({ cursorVariant, setCursorVariant }) {
     }
 
     return (
-        <aside className={styles.SocialButtonsAside}>
+        <aside className={`${styles.SocialButtonsAside} social-buttons-aside`}>
             <Link to={SOCIAL_PATHS.LINKEDIN} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                 <motion.img
                     src={linkedinLogo}

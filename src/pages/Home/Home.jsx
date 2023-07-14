@@ -11,7 +11,7 @@ import StayConnected from '../../components/StayConnected/StayConnected';
 import { APP_PATHS } from '../../utils/constants';
 import { ScrollRestoration } from 'react-router-dom';
 
-function Home({ cursorVariant, setCursorVariant }) {
+function Home({ cursorVariant, setCursorVariant, toggleTheme, theme }) {
     // Texte services button
     const textServicesButton = {
         buttonText: "Voir mes réalisations",
@@ -20,8 +20,8 @@ function Home({ cursorVariant, setCursorVariant }) {
 
     return (
         <React.StrictMode>
-            <div className={styles.PageContainer}>
-                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <div className={`${styles.PageContainer} page-container`}>
+                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
                 <main>
                     <section className={styles.TopSection}>
                         <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />

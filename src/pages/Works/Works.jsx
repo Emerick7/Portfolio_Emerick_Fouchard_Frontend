@@ -6,11 +6,11 @@ import styles from './Works.module.css';
 import SocialButtons from '../../components/SocialButtons/SocialButtons';
 import { ScrollRestoration } from 'react-router-dom';
 
-function Works({ cursorVariant, setCursorVariant }) {
+function Works({ cursorVariant, setCursorVariant, toggleTheme, theme }) {
     return(
         <React.StrictMode>
-            <div className={styles.PageContainer}>
-                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <div className={`${styles.PageContainer} page-container`}>
+                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
                 <div className={styles.ContentDiv}>
                     <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     <WorksPortfolio cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />

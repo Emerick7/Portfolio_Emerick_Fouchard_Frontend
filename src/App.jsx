@@ -65,24 +65,42 @@ function App() {
     }
   }
 
+  //Toggle dark light mode
+
+  const [ theme, setTheme ] = useState("dark");
+
+  const [bgColor, changeBgColor] = useState("#35414d");
+  const [txtColor, changeTxtColor] = useState("#CAD3C8");
+
+  document.body.style.backgroundColor = bgColor;
+  document.body.style.color = txtColor;
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === 'dark' ? 'light' : 'dark'));
+    changeBgColor((curr) => (curr === "#35414d" ? "#F8EFBA" : "#35414d"));
+    changeTxtColor((curr) => (curr === "#CAD3C8" ? "#3B3B98" : "#CAD3C8"));
+  };
+
+  //Router
+
   const router = createBrowserRouter(
     [
       {
         path: APP_PATHS.HOME,
-        element: <Home cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />,
-        errorElement: <ErrorPage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+        element: <Home cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />,
+        errorElement: <ErrorPage cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
       },
       {
         path: APP_PATHS.WORKS,
-        element: <Works cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+        element: <Works cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
       },
       {
         path: APP_PATHS.RESUME,
-        element: <Resume cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+        element: <Resume cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
       },
       {
         path: APP_PATHS.SERVICES,
-        element: <Services cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+        element: <Services cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
       },
       {
         path: APP_PATHS.SIGN_IN,
@@ -112,12 +130,6 @@ function App() {
       }
     ]
   );
-
-  const [ theme, setTheme ] = useState("dark");
-
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === 'dark' ? 'light' : 'dark'));
-  };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

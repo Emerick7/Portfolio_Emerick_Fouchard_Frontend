@@ -94,7 +94,7 @@ function AboutMe() {
                 variants={variants}
             >
               <motion.div
-                className={styles.Div}
+                className={`${styles.Div} div-about-me`}
                 initial="initial"
                 whileHover="onHover"
                 >

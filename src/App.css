@@ -14,3 +14,46 @@
     pointer-events: none;
     z-index: 1000;
 }
+
+/*Light Mode*/
+
+#light a {
+    color: #3B3B98;
+}
+
+#light .page-container {
+    background-color: #F8EFBA;
+}
+
+#light header img {
+    filter: invert(25%) sepia(66%) saturate(920%) hue-rotate(208deg) brightness(89%) contrast(101%);
+}
+
+#light .social-buttons-aside img {
+    filter: invert(25%) sepia(66%) saturate(920%) hue-rotate(208deg) brightness(89%) contrast(101%);
+}
+
+#light .service-div {
+    background-color: #f7efc3;
+}
+
+#light .div-about-me p {
+    color: #CAD3C8
+}
+
+#light .aside-container-stay-connected p {
+    color: #FC427B;
+}
+
+#light .contact-buttons-div-stay-connected img {
+    filter: invert(25%) sepia(66%) saturate(920%) hue-rotate(208deg) brightness(89%) contrast(101%);
+}
+
+#light .section-techs {
+    background-color: #f7efc3;
+}
+
+#light .techs-container span[data-title]:after {
+    background-color: #F8EFBA;
+    color: #3B3B98;
+}

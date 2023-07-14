@@ -12,7 +12,7 @@ import ResumePDF from 'public-data/CV-Emerick-FOUCHARD-2023.pdf';
 import Experiences from '../../components/Experiences/Experiences';
 import { APP_PATHS } from '../../utils/constants';
 
-function Resume({ cursorVariant, setCursorVariant }) {
+function Resume({ cursorVariant, setCursorVariant, toggleTheme, theme }) {
     const hoverEnter = () => setCursorVariant("hover");
     const hoverLeave = () => setCursorVariant("default");
 
@@ -49,8 +49,8 @@ function Resume({ cursorVariant, setCursorVariant }) {
 
     return(
         <React.StrictMode>
-            <div className={styles.PageContainer}>
-                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <div className={`${styles.PageContainer} page-container`}>
+                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
                 <div className={styles.ContentDiv}>
                     <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     <main>

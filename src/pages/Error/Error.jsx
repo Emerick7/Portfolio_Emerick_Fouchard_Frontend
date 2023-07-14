@@ -7,7 +7,7 @@ import Header from '../../components/Header/Header';
 import { APP_PATHS } from '../../utils/constants';
 import Footer from '../../components/Footer/Footer';
 
-function ErrorPage({ cursorVariant, setCursorVariant }) {
+function ErrorPage({ cursorVariant, setCursorVariant, toggleTheme, theme }) {
     const hoverEnter = () => setCursorVariant("hover");
     const hoverLeave = () => setCursorVariant("default");
 
@@ -16,8 +16,8 @@ function ErrorPage({ cursorVariant, setCursorVariant }) {
 
     return (
         <React.StrictMode>
-            <div className={styles.PageContainer}>
-                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <div className={`${styles.PageContainer} page-container`}>
+                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
                 <div className={styles.ErrorPage}>
                     <span className={styles.ErrorStatus}>{error.status}</span>
                     <span className={styles.ErrorDesc}>Oups! La page que vous demandez n'existe pas.</span>

@@ -9,8 +9,9 @@ import servicesLogo from '../../assets/services-pc-logo.svg';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { APP_PATHS, CONTACT_PATHS } from '../../utils/constants';
+import { useState } from 'react';
 
-function Header({ cursorVariant, setCursorVariant }) {
+function Header({ cursorVariant, setCursorVariant, toggleTheme, theme }) {
     const hoverEnter = () => setCursorVariant("hover");
     const hoverLeave = () => setCursorVariant("default");
 
@@ -25,10 +26,6 @@ function Header({ cursorVariant, setCursorVariant }) {
         stiffness: 400,
         damping: 10
     }
-    
-    function darkBrightMode() {
-
-    };
 
     return (
         <header className={styles.Header}>
@@ -55,7 +52,7 @@ function Header({ cursorVariant, setCursorVariant }) {
                     <span className={styles.MenuToggleSpan}></span>
                     <span className={styles.MenuToggleSpan}></span>
                 <div className={styles.Menu}>
-                    <img src={sunLogo} className={styles.DBModeImg} onClick={darkBrightMode} alt='dark-bright-mode-emerick-fouchard' onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}/>
+                    <img src={theme === "dark" ? moonLogo : sunLogo} className={styles.DBModeImg} onClick={toggleTheme} alt='dark-bright-mode-emerick-fouchard' onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}/>
                     <nav className={styles.Nav}>
                         <ul>
                             <motion.li whileHover={onHover} transition={transitionOnHover}>

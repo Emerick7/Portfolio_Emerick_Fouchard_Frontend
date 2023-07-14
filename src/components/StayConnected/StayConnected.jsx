@@ -18,7 +18,7 @@ function StayConnected({cursorVariant, setCursorVariant}) {
     }
 
     return (
-        <aside className={styles.AsideContainer}>
+        <aside className={`${styles.AsideContainer} aside-container-stay-connected`}>
             <h4>Restons connectés</h4>
             <p>Besançon (Doubs), France</p>
             <Link
@@ -29,7 +29,7 @@ function StayConnected({cursorVariant, setCursorVariant}) {
                 >
                 fouchardemerick@gmail.com
             </Link>
-            <div className={styles.ContactButtonsDiv}>
+            <div className={`${styles.ContactButtonsDiv} contact-buttons-div-stay-connected`}>
                 <Link to={CONTACT_PATHS.WHATSAPP} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
                     <motion.img
                         src={WhatsAppLogo}

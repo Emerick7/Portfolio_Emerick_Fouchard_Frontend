@@ -7,7 +7,7 @@ import ServicesSection from '../../components/Services/ServicesSection/ServicesS
 import { CONTACT_PATHS } from '../../utils/constants';
 import { ScrollRestoration } from 'react-router-dom';
 
-function Services({ cursorVariant, setCursorVariant }) {
+function Services({ cursorVariant, setCursorVariant, toggleTheme, theme }) {
     // Texte services button
     const textServicesButton = {
         buttonText: "Contactez-moi pour discuter de votre projet",
@@ -16,8 +16,8 @@ function Services({ cursorVariant, setCursorVariant }) {
 
     return(
         <React.StrictMode>
-            <div className={styles.PageContainer}>
-                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
+            <div className={`${styles.PageContainer} page-container`}>
+                <Header cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
                 <div className={styles.ContentDiv}>
                     <SocialButtons cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} />
                     <main className={styles.Main}>
