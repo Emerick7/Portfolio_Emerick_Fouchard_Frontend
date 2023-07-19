@@ -1,6 +1,6 @@
 const prod = {
     url: {
-        API_URL: 'https://portfolio-api-rest-emerick-fouchard.onrender.com'
+        API_URL: 'https://api.emerickfouchard.fr'
     }
 };
 const dev = {
