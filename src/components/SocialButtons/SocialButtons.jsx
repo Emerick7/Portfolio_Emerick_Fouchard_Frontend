@@ -20,25 +20,37 @@ function SocialButtons({ cursorVariant, setCursorVariant }) {
 
     return (
         <aside className={`${styles.SocialButtonsAside} social-buttons-aside`}>
-            <Link to={SOCIAL_PATHS.LINKEDIN} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
+            <Link to={SOCIAL_PATHS.LINKEDIN} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} 
+                target="_blank"
+                aria-label="Lien vers la page LinkedIn de Emerick Fouchard"
+                >
                 <motion.img
                     src={linkedinLogo}
                     whileHover={onHover}
                     transition={transitionOnHover}
+                    alt="linkedin-emerick-fouchard-developper-full-stack-webmaster"
                 />
             </Link>
-            <Link to={SOCIAL_PATHS.GITHUB} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
+            <Link to={SOCIAL_PATHS.GITHUB} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} 
+                target="_blank"
+                aria-label="Lien vers la page GitHub de Emerick Fouchard"
+                >
                 <motion.img
                     src={githubLogo}
                     whileHover={onHover}
                     transition={transitionOnHover}
+                    alt="github-emerick-fouchard-developper-full-stack-webmaster"
                 />
             </Link>
-            <Link to={SOCIAL_PATHS.TWITTER} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
+            <Link to={SOCIAL_PATHS.TWITTER} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} 
+                target="_blank"
+                aria-label="Lien vers la compte Twitter de Emerick Fouchard"
+                >
                 <motion.img
                     src={twitterLogo}
                     whileHover={onHover}
                     transition={transitionOnHover}
+                    alt="twitter-emerick-fouchard-developper-full-stack-webmaster"
                 />
             </Link>
         </aside>

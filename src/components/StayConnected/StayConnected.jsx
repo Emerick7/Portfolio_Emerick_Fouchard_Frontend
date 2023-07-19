@@ -30,18 +30,26 @@ function StayConnected({cursorVariant, setCursorVariant}) {
                 fouchardemerick@gmail.com
             </Link>
             <div className={`${styles.ContactButtonsDiv} contact-buttons-div-stay-connected`}>
-                <Link to={CONTACT_PATHS.WHATSAPP} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
+                <Link to={CONTACT_PATHS.WHATSAPP} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} 
+                    target="_blank"
+                    aria-label="Lien pour contacter Emerick Fouchard via WhatsApp"
+                    >
                     <motion.img
                         src={WhatsAppLogo}
                         whileHover={onHover}
                         transition={transitionOnHover}
+                        alt="whatsapp-emerick-fouchard-developper-full-stack-webmaster"
                     />
                 </Link>
-                <Link to={SOCIAL_PATHS.INSTAGRAM} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} target="_blank">
+                <Link to={SOCIAL_PATHS.INSTAGRAM} onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} 
+                    target="_blank"
+                    aria-label="Lien pour contacter Emerick Fouchard via Instagram"
+                    >
                     <motion.img
                         src={InstagramLogo}
                         whileHover={onHover}
                         transition={transitionOnHover}
+                        alt="instagram-emerick-fouchard-developper-full-stack-webmaster"
                     />
                 </Link>
             </div>
