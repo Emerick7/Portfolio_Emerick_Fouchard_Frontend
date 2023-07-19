@@ -22,7 +22,7 @@ function SingleWork({ work }) {
     }
 
     return (
-        <motion.li 
+        <motion.div 
             className={styles.WorkLi}
             initial="initial"
             whileHover="onHover"
@@ -38,7 +38,7 @@ function SingleWork({ work }) {
                 </div>
                 <p>{work.desc}</p>
             </motion.div>
-        </motion.li>
+        </motion.div>
     );
 }
 
