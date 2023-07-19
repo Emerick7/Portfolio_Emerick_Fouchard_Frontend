@@ -18,8 +18,8 @@ function WorksScroll({ cursorVariant, setCursorVariant }) {
 
     const displayWorks = () => (works ? works.map(
       (work) => 
-        <li>
-            <Link to={work.url} target="_blank" onMouseEnter={hoverEnter} onMouseLeave={hoverLeave} key={work._id}>
+        <li key={work._id}>
+            <Link to={work.url} target="_blank" onMouseEnter={hoverEnter} onMouseLeave={hoverLeave}>
                 <SingleWork work={work} key={work.id} />
             </Link>
         </li>

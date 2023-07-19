@@ -14,14 +14,15 @@
 }
 
 .WorksDiv a {
-    text-decoration: none;
-}
-
-.WorksDiv li {
     height: auto;
     width: auto;
     aspect-ratio: 576 / 316;
     margin: 0;
+    text-decoration: none;
+}
+
+.WorksDiv a > div {
+    width: auto;
 }
 
 .WorksTop {
@@ -59,7 +60,7 @@
         flex-direction: column;
     }
 
-    .WorksDiv li {
+    .WorksDiv a {
         aspect-ratio: 5 / 6;
     }
 
