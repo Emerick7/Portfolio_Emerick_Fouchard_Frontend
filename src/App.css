@@ -29,6 +29,19 @@
     filter: invert(25%) sepia(66%) saturate(920%) hue-rotate(208deg) brightness(89%) contrast(101%);
 }
 
+#light .services-button {
+    background-color: #EAB543;
+    color: #3B3B98;
+}
+
+#light .div-arrow-svg > svg {
+    filter: invert(25%) sepia(66%) saturate(920%) hue-rotate(208deg) brightness(89%) contrast(101%);
+}
+
+#light .list-services {
+    background: #EAB543;
+}
+
 #light .social-buttons-aside img {
     filter: invert(25%) sepia(66%) saturate(920%) hue-rotate(208deg) brightness(89%) contrast(101%);
 }
@@ -56,4 +69,14 @@
 #light .techs-container span[data-title]:after {
     background-color: #F8EFBA;
     color: #3B3B98;
+}
+
+@media only screen and (min-width : 280px) and (max-width : 480px) {
+    #light .services-button {
+        background-color: #fc8888;
+    }
+    
+    #light .list-services {
+        background: #fc8888;
+    }
 }

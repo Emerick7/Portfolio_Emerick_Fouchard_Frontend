@@ -13,9 +13,9 @@ import Works from './pages/Works/Works';
 import SignIn from './pages/SignIn/SignIn';
 import AddWork from './pages/AddWork/AddWork';
 import Resume from './pages/Resume/Resume';
-import Services from './pages/Services/Services';
 import UpdateWork from './pages/UpdateWork/UpdateWork';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Service from './pages/Service/Service';
 
 export const ThemeContext = createContext(null);
 
@@ -100,7 +100,7 @@ function App() {
       },
       {
         path: APP_PATHS.SERVICES,
-        element: <Services cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
+        element: <Service cursorVariant={cursorVariant} setCursorVariant={setCursorVariant} toggleTheme={toggleTheme} theme={theme} />
       },
       {
         path: APP_PATHS.SIGN_IN,

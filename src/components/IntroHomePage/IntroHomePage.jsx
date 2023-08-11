@@ -74,10 +74,8 @@ function IntroHomePage({ cursorVariant, setCursorVariant }) {
                     <Typed
                         strings={[
                             'Je suis Développeur Full-Stack',
-                            'Je suis passioné de software et hardware',
                             'Je suis Webmaster',
-                            'Je suis papa',
-                            'Je suis mari',
+                            'Je suis passioné de software et hardware',
                             'Je suis Développeur Front-End',
                             'Je suis Développeur Back-End',
                             'Je suis Développeur WordPress',

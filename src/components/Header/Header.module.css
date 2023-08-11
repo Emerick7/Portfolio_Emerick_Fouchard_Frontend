@@ -95,8 +95,12 @@
     list-style-type: none;
 }
 
-.Nav li:first-of-type {
+.Nav > ul > li:first-of-type {
     display: none;
+}
+
+.Nav > ul > li:last-of-type {
+    padding: 0;
 }
 
 .Nav a {
@@ -109,6 +113,61 @@
     width: 20px;
     filter: invert(94%) sepia(18%) saturate(99%) hue-rotate(61deg) brightness(88%) contrast(90%);
     margin-right: 5px;
+}
+
+.ServicesMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.ServicesButton {
+    -webkit-appearance: button;
+    background-color: #394b5c;
+    color: #CAD3C8;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+    /*cursor: pointer;*/
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ServicesButton > div:first-of-type {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.DivArrowSvg {
+    display: flex;
+}
+
+.DivArrowSvg > svg {
+    filter: invert(87%) sepia(5%) saturate(354%) hue-rotate(63deg) brightness(94%) contrast(98%);
+}
+
+.ServicesMenu > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+    top: 225px;
+    margin-top: -220px;
+    gap: 10px;
+    background: #394b5c;
+    width: 100%;
+    z-index: 1;
+}
+
+.ServicesMenu > ul > li {
+    display: block;
+    margin: 0;
 }
 
 @media only screen and (min-width : 481px) and (max-width : 1065px) {
@@ -232,6 +291,19 @@
 
     .ContactEmail {
         display: none;
+    }
+
+    .ServicesButton {
+        background-color: #fc8888;
+        color: #182C61;
+    }
+
+    .DivArrowSvg > svg {
+        filter: invert(13%) sepia(34%) saturate(3232%) hue-rotate(208deg) brightness(98%) contrast(96%);
+    }
+
+    .ServicesMenu > ul {
+        background: #fc8888;
     }
 }
 
