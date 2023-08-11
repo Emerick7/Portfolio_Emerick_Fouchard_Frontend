@@ -5,6 +5,7 @@ import SEOCover from '../../src/assets/SEOService/seo-header.svg';
 import OptimizationCover from '../../src/assets/OptimizationService/website-optimization-header.svg';
 
 import UXUIImg from '../../src/assets/FrontendService/ux-ui.png';
+import DeveloppementImg from '../../src/assets/FrontendService/developpement.png';
 
 export const ServicesContent = [
     {
@@ -75,7 +76,7 @@ export const ServicesContent = [
             {
                 "h2": "Un processus de développement complet :",
                 "paragraph": "Analyse Approfondie : Chaque projet que j'entreprends commence par une analyse minutieuse de vos objectifs, de votre public cible et de vos besoins. Comprendre pleinement votre vision est la première étape pour créer une expérience utilisateur exceptionnelle. Cette phase initiale est cruciale pour définir les fondations solides de l'application à venir.<br />Conception Créative : Une fois que j'ai une compréhension claire de vos objectifs, je traduis vos idées en réalité grâce à des wireframes et des prototypes interactifs. Cette étape est une opportunité pour vous de visualiser l'apparence et la convivialité de l'application frontend. Chaque élément visuel est conçu pour refléter votre identité de marque tout en optimisant l'expérience utilisateur.<br />Développement Expert : Avec une vision claire et une conception en main, je passe à la phase de développement. J'utilise mes compétences en développement frontend pour concrétiser les conceptions. Les technologies modernes telles que React, framer-motion et GSAP sont utilisées pour garantir une expérience utilisateur de premier ordre. Chaque ligne de code est soigneusement écrite pour assurer la performance, la stabilité et la maintenabilité de l'application.<br />Tests Approfondis : Avant que l'application ne soit prête à être déployée, chaque aspect est soumis à des tests rigoureux. Cela garantit que l'application fonctionne sans accroc, qu'elle est compatible avec divers navigateurs et dispositifs, et qu'elle est optimisée pour le référencement SEO. Des tests d'accessibilité sont également effectués pour s'assurer que l'application est utilisable par tous les utilisateurs, quels que soient leurs besoins.<br />Déploiement et Suivi : Une fois que les tests sont réussis, l'application est déployée de manière transparente. Mais le travail ne s'arrête pas là. Je surveille attentivement les performances de l'application, analyse les données et recueille les commentaires des utilisateurs. Cela me permet d'apporter des ajustements continus pour optimiser l'expérience utilisateur en fonction des retours obtenus. En outre, dans un monde en constante évolution, je m'assure que l'application reste à jour et compatible avec les nouvelles normes et les nouveaux dispositifs.",
-                //"image": ,
+                "image": DeveloppementImg,
             },
             {
                 "h3": "Les avantages de choisir mes services :",

@@ -9,7 +9,7 @@ function ServicePageContent({ service, cursorVariant, setCursorVariant }) {
 
     return(
         <React.StrictMode>
-            <div className={styles.H1Div} style={{background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${service.cover})`}}>
+            <div className={styles.H1Div} style={{background: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${service.cover})`}}>
                 <h1>{service.h1}</h1>
             </div>
             <article>
