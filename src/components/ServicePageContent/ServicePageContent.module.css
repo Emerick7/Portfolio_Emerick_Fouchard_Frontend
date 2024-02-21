@@ -31,7 +31,7 @@
 }
 
 .ContentDiv > div:first-of-type {
-    width: 40vw;
+    width: 100%;
 }
 
 .ContentDiv h2 {
@@ -47,7 +47,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 40vw;
+    width: 60vw;
     position: relative;
     left: 15vw;
     margin-left: -15vw !important;

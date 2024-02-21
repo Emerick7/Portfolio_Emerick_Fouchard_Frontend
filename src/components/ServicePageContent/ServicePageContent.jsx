@@ -13,8 +13,6 @@ function ServicePageContent({ service, cursorVariant, setCursorVariant }) {
             </div>
             <article>
                 {service.content.map((section, index) => {
-                    let variants = [];
-
                     return (
                         <section
                             key={index}
