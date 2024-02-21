@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 50px;
     width: 100%;
     height: 33vh;
     border-radius: 30px;
@@ -15,7 +16,7 @@
 }
 
 .SectionArticle {
-    height: 85vh;
+    margin: 100px 0;
 }
 
 .ContentDiv {

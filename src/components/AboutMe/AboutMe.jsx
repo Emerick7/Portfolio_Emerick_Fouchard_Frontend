@@ -107,7 +107,7 @@ function AboutMe() {
                     >
                       <h2>Emerick Fouchard</h2>
                       <h3>Métier : Développeur Full-Stack JavaScript</h3>
-                      <h3>Lieu : Besançon, France</h3>
+                      <h3>Lieu : Fougères, France</h3>
                       <h3>Particularité : Voyage régulierement à Shillong, Inde</h3>
                       <h3>Fun fact : Fan et joueur invétéré de Rocket League depuis 2016</h3>
                   </motion.div>
@@ -124,7 +124,7 @@ function AboutMe() {
                   </motion.div>
                 </motion.div>
                 <p>
-                  Je suis un Développeur Full-Stack et Webmaster basé à Besançon, et passionné par la création d'applications web et autres applications depuis mon adolescence. 
+                  Je suis un Développeur Full-Stack et Webmaster basé à Fougères, et passionné par la création d'applications web et autres applications depuis mon adolescence. 
                   Mon épouse étant Indienne, nous sommes toujours entre la France et l'Inde. Mon métier me permet de pouvoir travailler de n'importe où.
                   <br/><br/>
                   Diplômé avec une solide formation et une expérience pratique dans le développement front-end et back-end, 
@@ -134,7 +134,7 @@ function AboutMe() {
                   <br/><br/>
                   Grâce à mes compétences étendues en développement front-end et back-end, je suis en mesure de concevoir et de mettre en œuvre des solutions web complètes, 
                   du design initial à la mise en production. J'apprécie particulièrement l'optimisation des performances, la sécurisation des sites et l'amélioration de l'expérience utilisateur. 
-                  Travailler en tant que développeur web à Besançon quand je suis en France et dans la belle ville de Shillong quand je suis en Inde est un véritable plaisir, 
+                  Travailler en tant que développeur web à Fougères quand je suis en France et dans la belle ville de Shillong quand je suis en Inde est un véritable plaisir, 
                   et je suis toujours prêt à relever de nouveaux défis passionnants pour créer des projets web de qualité.
                 </p>
               </motion.div>

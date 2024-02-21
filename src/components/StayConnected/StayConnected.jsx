@@ -20,7 +20,7 @@ function StayConnected({cursorVariant, setCursorVariant}) {
     return (
         <aside className={`${styles.AsideContainer} aside-container-stay-connected`}>
             <h4>Restons connectés</h4>
-            <p>Besançon (Doubs), France</p>
+            <p>Fougères (Ille-et-Vilaine), France</p>
             <Link
                 to={CONTACT_PATHS.MAIL}
                 onMouseEnter={hoverEnter}
