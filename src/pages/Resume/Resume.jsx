@@ -44,7 +44,7 @@ function Resume({ cursorVariant, setCursorVariant, toggleTheme, theme }) {
         textParagraph1: "Vous voulez voir mes services web ?",
         textParagraph2: "Voir mes Services 👉",
         buttonText: "Voir mes services",
-        link: APP_PATHS.SERVICES
+        link: "#top"
     }
 
     return(
